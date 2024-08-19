@@ -35,6 +35,8 @@
 @import "./layouts/mobile-menu";
 @import "./layouts/footer";
 
+@import "./parts/block";
+
 // responsive design
 :root {
     font-size: calc(100vw / 375 * 16);
@@ -74,13 +76,14 @@ html {
 }
 
 body {
-    font-family: "Bahnschrift";
+    font-family: "Bahnschrift Condensed";
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
-    font-stretch: ultra-condensed;
+    font-weight: 300;
+    font-stretch: condensed;
     line-height: normal;
     background-color: rgba(var(--bs-body-background-color), 1);
+    color: var(--grey-700);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

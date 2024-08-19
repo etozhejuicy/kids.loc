@@ -3,7 +3,7 @@
         <div class="footer-inner">
             <div class="row">
                 <div class="col-12 col-md-6 col-xl-auto">
-                    <div class="footer-start">
+                    <div class="footer-start footer-column">
                         <div class="row">
                             <div class="col-12">
                                 <div class="block">

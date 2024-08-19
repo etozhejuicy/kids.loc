@@ -1,0 +1,17 @@
+:root {
+    --block-gap-x: 1.875rem;
+    --block-gap-y: 1.875rem;
+}
+
+.block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--block-gap-y);
+    column-gap: var(--block-gap-x);
+    width: 100%;
+    &-inline {
+        flex-direction: row;
+    }
+}

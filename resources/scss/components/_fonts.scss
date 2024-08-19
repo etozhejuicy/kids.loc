@@ -12,3 +12,39 @@
     font-display: swap;
     ascent-override: 95%;
 }
+
+@font-face {
+    font-family: "Bahnschrift Extra Condensed";
+    src: url("/resources/fonts/Bahnschrift/Bahnschrift.eot");
+    src:
+        url("/resources/fonts/Bahnschrift/Bahnschrift2.ttf") format("truetype"),
+        url("/resources/fonts/Bahnschrift/Bahnschrift.svg#Bahnschrift") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    ascent-override: 95%;
+}
+
+@font-face {
+    font-family: "Bahnschrift Condensed";
+    src: url("/resources/fonts/Bahnschrift/Bahnschrift.eot");
+    src:
+        url("/resources/fonts/Bahnschrift/Bahnschrift2.ttf") format("truetype"),
+        url("/resources/fonts/Bahnschrift/Bahnschrift.svg#Bahnschrift") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    ascent-override: 95%;
+}
+
+@font-face {
+    font-family: "Bahnschrift SemiBold Condensed";
+    src: url("/resources/fonts/Bahnschrift/Bahnschrift.eot");
+    src:
+        url("/resources/fonts/Bahnschrift/Bahnschrift2.ttf") format("truetype"),
+        url("/resources/fonts/Bahnschrift/Bahnschrift.svg#Bahnschrift") format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    ascent-override: 95%;
+}
