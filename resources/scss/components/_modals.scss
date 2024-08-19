@@ -1,0 +1,222 @@
+:root {
+    --bs-modal-bg: var(--white-rgb);
+    --bs-modal-bg-opacity: 1;
+    --bs-modal-backdrop-bg: var(--grey-900-rgb);
+    --bs-modal-backdrop-bg-opacity: 1;
+    --bs-modal-border-radius: 0;
+    --bs-modal-padding-y: 3rem;
+    --bs-modal-padding-x: 2rem;
+    --bs-modal-body-padding: var(--bs-modal-body-padding-y) var(--bs-modal-body-padding-x);
+    --bs-modal-body-padding-y: 1.5625rem;
+    --bs-modal-body-padding-x: 0;
+    --bs-modal-zindex: 1050;
+    --modal-close-size: 3rem;
+    @media (min-width: 576px) {
+        --modal-close-size: 3.25rem;
+    }
+    @media (min-width: 768px) {
+        --bs-modal-backdrop-bg: var(--grey-900-rgb);
+        --bs-modal-backdrop-bg-opacity: 0.5;
+        --modal-close-size: 3.5rem;
+    }
+    @media (min-width: 1200px) {
+        --modal-close-size: 4rem;
+    }
+}
+
+.modal {
+    position: fixed;
+    background-color: rgba(var(--bs-modal-backdrop-bg), var(--bs-modal-backdrop-bg-opacity));
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: var(--bs-modal-zindex);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: all;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition:
+        opacity 0.4s ease-in-out,
+        visibility 0.4s ease-in-out,
+        background-color 0.4s ease-in-out;
+    &-is {
+        &-open {
+            position: static;
+            touch-action: none;
+            overflow: hidden;
+        }
+    }
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    &-dialog {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    &-body {
+        padding: var(--bs-modal-body-padding-y) 0 0 0;
+        &-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            & iframe,
+            & video,
+            & source {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                border: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 0;
+                -webkit-mask-image: -webkit-radial-gradient(white, black);
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+            }
+        }
+    }
+    &-content {
+        position: relative;
+        z-index: 1;
+        padding: var(--bs-modal-padding-y) var(--bs-modal-padding-x);
+        border-radius: var(--bs-modal-border-radius);
+        background: rgba(var(--bs-modal-bg), var(--bs-modal-bg-opacity));
+        max-width: fit-content;
+        min-width: 18.75rem;
+        margin: auto;
+        overflow: hidden;
+    }
+    &-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-close {
+        --bs-btn-padding-x: 1.063rem;
+        --bs-btn-padding-y: 1.063rem;
+        --bs-border-radius: 100%;
+        --bs-btn-color: rgba(var(--grey-900-rgb), 1);
+        --bs-btn-bg: rgba(var(--white-rgb), 1);
+        --bs-btn-border-color: rgba(var(--grey-200-rgb), 1);
+        --bs-btn-hover-color: rgba(var(--grey-900-rgb), 1);
+        --bs-btn-hover-bg: rgba(var(--grey-200-rgb), 1);
+        --bs-btn-hover-border-color: rgba(var(--black-rgb), 0.15);
+        --bs-btn-active-color: rgba(var(--white-rgb), 1);
+        --bs-btn-active-bg: rgba(var(--grey-600-rgb), 1);
+        --bs-btn-active-border-color: rgba(var(--grey-600-rgb), 1);
+        --bs-btn-disabled-color: rgba(var(--black-rgb), 0.4);
+        --bs-btn-disabled-bg: rgba(var(--black-rgb), 0.125);
+        --bs-btn-disabled-border-color: rgba(var(--black-rgb), 0.125);
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+        width: var(--modal-close-size);
+        height: var(--modal-close-size);
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        text-transform: none;
+        transform: translate(0, 0);
+        @media (min-width: 576px) {
+            top: 1.25rem;
+            right: 1.25rem;
+            width: var(--modal-close-size);
+            height: var(--modal-close-size);
+        }
+        @media (min-width: 768px) {
+            top: 2rem;
+            right: 2rem;
+        }
+        @media (min-width: 1200px) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
+    }
+    &-media {
+        overflow: hidden;
+        & .modal-dialog {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            transform: translate(-50%, -50%);
+        }
+        & .modal-content {
+            --bs-modal-bg-opacity: 0;
+            --bs-modal-padding-x: 0;
+            --bs-modal-padding-y: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            // max-width: 100%;
+            min-width: 25.5rem;
+        }
+        & .modal-body {
+            --bs-modal-body-padding-y: var(--modal-close-size);
+            --bs-modal-body-padding-x: 0;
+            max-width: 100%;
+            max-height: 100%;
+            padding: calc(var(--bs-modal-body-padding-y) * 2) var(--bs-modal-body-padding-x)
+                calc(var(--bs-modal-body-padding-y) / 2);
+            overflow: hidden;
+        }
+        &-wrapper {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            & > * {
+                position: relative;
+                z-index: 2;
+                border: 0;
+                align-self: center;
+                max-width: 100%;
+                width: max-content;
+                height: auto;
+                max-height: 100%;
+                border-radius: 0;
+                object-fit: contain;
+                @media (min-width: 768px) {
+                    max-width: 50rem;
+                }
+                @media (min-width: 1200px) {
+                    max-width: 75rem;
+                }
+                &:is(iframe),
+                &:is(video) {
+                    min-width: 100vw;
+                    aspect-ratio: 16 / 9;
+                    @media (min-width: 768px) {
+                        min-width: 50rem;
+                    }
+                    @media (min-width: 1200px) {
+                        min-width: 75rem;
+                    }
+                }
+            }
+        }
+    }
+}
