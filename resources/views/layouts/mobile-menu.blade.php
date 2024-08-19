@@ -56,32 +56,7 @@
         <div class="menu-footer">
             <div class="container">
                 <div class="contacts-block">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="menu-title">
-                                <h4 class="h-4">
-                                    Свяжитесь с нами
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="menu-contacts">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <a href="tel:+7(999)999-99-99" class="text-3 fw-300">+7(999)999-99-99</a>
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="mailto:email@gmail.com" class="text-3 fw-300">email@gmail.com</a>
-                                    </div>
-                                    <div class="col-12">
-                                        <span class="text-3 fw-300">
-                                            Москва, Краснопресненская набережная, д. 12
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @include('blocks.contacts')
                 </div>
             </div>
         </div>
@@ -89,14 +64,14 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-auto">
-                        <a href="javascript://" class="btn btn-sm btn-icon text-yellow">
+                        <a href="javascript://" class="btn btn-sm btn-icon btn-white text-yellow">
                             <svg fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden=" true" focusable="false">
                                 <use xlink:href="/sprite.svg#telegram"></use>
                             </svg>
                         </a>
                     </div>
                     <div class="col-auto">
-                        <a href="javascript://" class="btn btn-sm btn-icon text-yellow">
+                        <a href="javascript://" class="btn btn-sm btn-icon btn-white text-yellow">
                             <svg fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                 <use xlink:href="/sprite.svg#vk"></use>
                             </svg>

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer-inner">
             <div class="row">
-                <div class="col-12 col-md-6 col-xl-auto">
+                <div class="col-12 col-xl-auto">
                     <div class="footer-start footer-column">
                         <div class="row">
                             <div class="col-12">
@@ -20,44 +20,25 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="block block-contacts">
-                                    <div class="block-title">
-                                        <h4 class="h-4">
-                                            Свяжитесь с нами
-                                        </h4>
-                                    </div>
-                                    <div class="block-content">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <a href="tel:+7(999)999-99-99" class="text-3 fw-300">+7(999)999-99-99</a>
-                                            </div>
-                                            <div class="col-12">
-                                                <a href="mailto:email@gmail.com" class="text-3 fw-300">email@gmail.com</a>
-                                            </div>
-                                            <div class="col-12">
-                                                <span class="text-3 fw-300">
-                                                    Москва, Краснопресненская набережная, д. 12
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @include('blocks.contacts')
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl">
+                <div class="col-12 col-xl">
                     <div class="footer-middle">
                         <form class="form" action="?">
                             @csrf
                             <div class="row">
                                 <div class="col-12">
-                                    <p>
-                                        Получайте сообщения о каждом обновлении, которое мы публикуем.
-                                    </p>
-                                    <p>
-                                        Получайте сообщения о каждом обновлении, которое мы публикуем.
-                                    </p>
+                                    <div class="form-description">
+                                        <p>
+                                            Получайте сообщения о каждом обновлении, которое мы публикуем.
+                                        </p>
+                                        <p>
+                                            Получайте сообщения о каждом обновлении, которое мы публикуем.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-label form-relative">
@@ -78,14 +59,26 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-auto">
+                <div class="col-12 col-xl-auto">
                     <div class="footer-end">
                         <div class="row">
                             <div class="col-12">
                                 <div class="footer-social">
                                     <div class="row">
-                                        <div class="col-auto"></div>
-                                        <div class="col-auto"></div>
+                                        <div class="col-auto">
+                                            <a href="javascript://" class="btn btn-sm btn-icon btn-white text-yellow">
+                                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden=" true" focusable="false">
+                                                    <use xlink:href="/sprite.svg#telegram"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="javascript://" class="btn btn-sm btn-icon btn-white text-yellow">
+                                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                                    <use xlink:href="/sprite.svg#vk"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

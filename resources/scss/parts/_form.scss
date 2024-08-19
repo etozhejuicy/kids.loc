@@ -1,0 +1,24 @@
+:root {
+    --form-gap-x: 1.875rem;
+    --form-gap-y: 1.875rem;
+    @media (min-width: 1200px) {
+        --form-gap-x: 3.75rem;
+        --form-gap-y: 3.75rem;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    & > .row {
+        --bs-gutter-y: var(--form-gap-y);
+        --bs-gutter-x: var(--form-gap-x);
+    }
+    &-description {
+        & p {
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}

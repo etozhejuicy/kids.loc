@@ -19,6 +19,7 @@
 @import "./components/fonts";
 @import "./components/form";
 @import "./components/hr";
+@import "./components/icons";
 @import "./components/items";
 @import "./components/lazyload";
 @import "./components/progress";
@@ -36,6 +37,7 @@
 @import "./layouts/footer";
 
 @import "./parts/block";
+@import "./parts/form";
 
 // responsive design
 :root {
@@ -112,9 +114,7 @@ body {
 .ls-blur-up-img {
     filter: blur(0.625rem);
     opacity: 1;
-    transition:
-        opacity 1000ms,
-        filter 1500ms;
+    transition: opacity 1000ms, filter 1500ms;
 }
 
 .ls-blur-up-img.ls-inview.ls-original-loaded {

@@ -1,0 +1,22 @@
+.icon {
+    width: fit-content;
+    height: inherit;
+    & > * {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &-size {
+        &-1 {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+    &-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+}

@@ -14,4 +14,12 @@
     &-inline {
         flex-direction: row;
     }
+    &-contacts {
+        & .block-content {
+            & > .row {
+                --bs-gutter-x: 0.625rem;
+                --bs-gutter-y: 0.625rem;
+            }
+        }
+    }
 }
