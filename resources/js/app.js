@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+    document.documentElement.style.setProperty("display", "block");
+});
+
 // wow extend
 import WOW from 'wow.js';
 new WOW().init();

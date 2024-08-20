@@ -1,0 +1,17 @@
+<svg width="1920" height="448" viewBox="0 0 1920 448" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1920 320H0V384H1920V320Z" fill="#FFDC55"/>
+<path d="M1920 384H0V448H1920V384Z" fill="#FFAF01"/>
+<path opacity="0.75" d="M1920 256H0V320H1920V256Z" fill="#FFAF01"/>
+<path d="M1920 192H0V256H1920V192Z" fill="#FFDC55"/>
+<path opacity="0.5" d="M1920 128H0V192H1920V128Z" fill="#FFAF01"/>
+<path opacity="0.25" d="M1920 0H0V64H1920V0Z" fill="#FFAF01"/>
+<path d="M1920 64H0V128H1920V64Z" fill="#FFDC55"/>
+<path d="M1919 0H0V448H1919V0Z" fill="url(#paint0_linear_43_2579)"/>
+<defs>
+<linearGradient id="paint0_linear_43_2579" x1="0" y1="224" x2="1919" y2="224" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFDC55" stop-opacity="0"/>
+<stop offset="0.9" stop-color="#FFDC55"/>
+<stop offset="1" stop-color="#FFDC55"/>
+</linearGradient>
+</defs>
+</svg>

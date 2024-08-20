@@ -1,0 +1,92 @@
+:root {
+    --graphic-gap: 1.875rem;
+    --graphic-content-gap: 0.938rem;
+    --graphic-color: var(--dark-blue);
+}
+
+.graphic-card {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: var(--graphic-gap);
+    column-gap: var(--graphic-gap);
+    min-width: 16.25rem;
+    &-line {
+        width: 0.0625rem;
+        height: 100%;
+        min-height: 3.75rem;
+        background: var(--dark-blue);
+        margin: 0 0.5rem;
+        opacity: 0.5;
+        transition: min-height 0.8s ease;
+        @media (min-width: 1200px) {
+            min-height: 6.25rem;
+        }
+    }
+    &-date {
+        font-weight: 300;
+        font-size: 1.12rem;
+        color: var(--dark-blue);
+        transition:
+            font-size 0.8s ease,
+            opacity 0.8s ease;
+        @media (min-width: 1200px) {
+            font-size: 1.88rem;
+        }
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: var(--graphic-content-gap);
+        column-gap: var(--graphic-content-gap);
+        margin: 0 0.5rem;
+    }
+    &-point {
+        position: relative;
+        z-index: 1;
+        width: 1rem;
+        height: 1rem;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            width: calc(100% * 2.25);
+            height: calc(100% * 2.25);
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 100%;
+            background-color: var(--white);
+            box-shadow: 0 0.188rem 1.563rem 0 rgba(var(--true-black-rgb), 0.25);
+            transform: translate(-50%, -50%);
+            transition: opacity 0.8s ease;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background: var(--graphic-color);
+        }
+    }
+    &-name {
+        font-weight: 900;
+        font-size: 1.88rem;
+        color: var(--primary);
+        text-transform: uppercase;
+        transition:
+            font-size 0.8s ease,
+            opacity 0.8s ease;
+        @media (min-width: 1200px) {
+            font-size: 3rem;
+        }
+    }
+}

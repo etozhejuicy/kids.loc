@@ -1,0 +1,178 @@
+@import "../../parts/graphic-card";
+
+:root {
+    --section-graphic-padding-y: 3.75rem;
+    --section-graphic-bg: var(--yellow);
+    --section-graphic-before-bg: url("/public_html/assets/images/pages/main/sections/graphic/bg.svg");
+    @media (min-width: 1200px) {
+        --section-graphic-padding-y: 6.25rem;
+    }
+}
+
+.section-graphic {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    background-color: var(--section-graphic-bg);
+    padding: var(--section-graphic-padding-y) 0;
+    @media (min-width: 1200px) {
+        padding: var(--section-graphic-padding-y) 0 calc(var(--section-graphic-padding-y) / 1.5);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: calc(var(--section-graphic-padding-y) * 2);
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-image: var(--section-graphic-before-bg);
+        background-position: center;
+        background-size: contain;
+    }
+    &-swiper {
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 3.85rem;
+            left: -5rem;
+            width: calc(100vw + 5rem);
+            height: 0.0625rem;
+            background: linear-gradient(90deg, rgba(var(--dark-blue-rgb), 1) 0%, rgba(var(--dark-blue-rgb), 1) 100%);
+            transform: translate(0, 0);
+        }
+        & .swiper-container {
+            width: 20.25rem;
+            overflow: visible;
+        }
+        & .swiper-wrapper {
+            width: 10000vw;
+            height: 12.625rem;
+            @media (min-width: 1200px) {
+                height: 22.05rem;
+            }
+        }
+        & .swiper-slide,
+        & swiper-slide {
+            width: fit-content;
+            & .graphic-card {
+                margin-top: 3.35rem;
+            }
+            &:is(.swiper-slide-active) {
+                &:not(.swiper-slide-next),
+                &:not(.swiper-slide-prev) {
+                    & .graphic-card {
+                        &-point {
+                            &::before {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+            &:not(.swiper-slide-active) {
+                &:is(.swiper-slide-next) {
+                    & .graphic-card {
+                        &-line {
+                            opacity: 0.25;
+                            min-height: 1.875rem;
+                            @media (min-width: 1200px) {
+                                min-height: 3.125rem;
+                            }
+                        }
+                        &-date {
+                            font-size: smaller;
+                            opacity: 0.25;
+                        }
+                        &-name {
+                            font-size: smaller;
+                            opacity: 0.25;
+                        }
+                    }
+                }
+            }
+            &:not(.swiper-slide-active) {
+                &:is(.swiper-slide-prev) {
+                    & .graphic-card {
+                        &-line {
+                            opacity: 0.25;
+                            min-height: 1.875rem;
+                            @media (min-width: 1200px) {
+                                min-height: 3.125rem;
+                            }
+                        }
+                        &-date {
+                            font-size: small;
+                            opacity: 0.25;
+                        }
+                        &-name {
+                            font-size: small;
+                            opacity: 0.25;
+                        }
+                    }
+                }
+            }
+            &:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next) {
+                & .graphic-card {
+                    &-line {
+                        opacity: 0.05;
+                        min-height: 0.875rem;
+                        @media (min-width: 1200px) {
+                            min-height: 1.563rem;
+                        }
+                    }
+                    &-date {
+                        font-size: xx-small;
+                        opacity: 0.05;
+                    }
+                    &-name {
+                        font-size: xx-small;
+                        opacity: 0.05;
+                    }
+                }
+            }
+        }
+        & .swiper-btn {
+            width: 3.125rem;
+            height: 3.125rem;
+            cursor: pointer;
+            @media (min-width: 768px) {
+                width: 5.375rem;
+                height: 5.375rem;
+            }
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            &:is(.swiper-button-disabled) {
+                opacity: 0.25;
+            }
+        }
+        & .swiper-nav-place {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            bottom: 0;
+            right: 0;
+        }
+        & .swiper-nav {
+            position: relative;
+            z-index: 5;
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin-top: 1.44rem;
+            & > .row {
+                --bs-gutter-x: 1.875rem;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
