@@ -1,7 +1,7 @@
 <section class="section section-content section-cover">
     <div class="section-cover-inner">
         <div class="section-cover-background">
-            <img data-src="/assets/images/pages/main/sections/cover/bg.png" class="lazyload" />
+            <!-- <img data-src="/assets/images/pages/main/sections/cover/bg.png" class="lazyload" /> -->
         </div>
         <div class="section-cover-content">
             <div class="container">
@@ -13,7 +13,7 @@
                     </div>
                     <div class="section-cover-next">
                         <div class="section-cover-arrow">
-
+                            <img data-src="/assets/images/pages/main/sections/cover/arrow.svg" class="lazyload" />
                         </div>
                         <div class="section-cover-subtitle">
                             Цифры проекта
