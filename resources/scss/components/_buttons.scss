@@ -213,8 +213,7 @@
         }
     }
     &-wider {
-        --bs-btn-padding-x: 1.875rem;
-        --bs-btn-padding-y: 0.625rem;
+        --bs-btn-padding-x: 3.875rem !important;
     }
     &-ripple {
         --bs-btn-ripple-size: 2.5rem;

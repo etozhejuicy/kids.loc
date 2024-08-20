@@ -1,0 +1,104 @@
+@import "../../parts/city-card";
+
+:root {
+    --section-cities-padding-y: 3.75rem;
+    --section-cities-inner-gap: 1.875rem;
+    --section-cities-content-gap: 1.875rem;
+    --section-cities-list-gap-x: 1.875rem;
+    --section-cities-list-gap-y: 1.875rem;
+    @media (min-width: 1200px) {
+        --section-cities-inner-gap: 3.75rem;
+        --section-cities-content-gap: 3.125rem;
+        --section-cities-list-gap-x: 3.125rem;
+        --section-cities-list-gap-y: 3.75rem;
+    }
+}
+
+.section-cities {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    padding: var(--section-cities-padding-y) 0;
+    @media (min-width: 1200px) {
+        padding: var(--section-cities-padding-y) 0 calc(var(--section-cities-padding-y) + 2.5rem);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
+        border-radius: none;
+        @media (min-width: 1200px) {
+            border-radius: 0 0 15rem 15rem;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: var(--yellow);
+    }
+    &-inner {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--section-cities-inner-gap);
+        column-gap: var(--section-cities-inner-gap);
+    }
+    &-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: var(--section-cities-content-gap);
+        column-gap: var(--section-cities-content-gap);
+        @media (min-width: 1200px) {
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0%;
+                left: 50%;
+                width: 46.875rem;
+                height: 46.875rem;
+                background-image: url("/public_html/assets/images/pages/main/sections/cities/sun.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: translate(-70%, -25%);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0%;
+                right: 0%;
+                width: 20.625rem;
+                height: 20.625rem;
+                background-image: url("/public_html/assets/images/pages/main/sections/cities/circles.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: translate(50%, -50%);
+            }
+        }
+    }
+    &-list {
+        position: relative;
+        display: block;
+        width: 100%;
+        & > .row {
+            --bs-gutter-x: var(--section-cities-list-gap-x);
+            --bs-gutter-y: var(--section-cities-list-gap-y);
+        }
+    }
+}

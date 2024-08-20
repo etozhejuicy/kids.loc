@@ -2,7 +2,7 @@
     <div class="container">
         <div class="section-target-inner">
             <div class="section-target-title">
-                <h3 class="h-3 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                <h3 class="h-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                     Наши цели
                 </h3>
             </div>

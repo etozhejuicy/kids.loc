@@ -6,7 +6,7 @@
                     читай с детьми
                 </div>
                 <div class="section-read-title">
-                    <h4 class="h-2 text-primary wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                    <h4 class="h-1 text-primary wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                         Кемерево
                     </h4>
                 </div>
