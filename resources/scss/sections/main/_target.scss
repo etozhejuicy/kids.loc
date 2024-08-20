@@ -1,6 +1,85 @@
+:root {
+    --section-target-padding-y: 3.75rem;
+    --section-target-inner-gap: 1.875rem;
+    --section-target-content-gap: 5.25rem;
+}
+
 .section-target {
     position: relative;
     z-index: 1;
     display: block;
     width: 100%;
+    padding: var(--section-target-padding-y) 0;
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--section-target-inner-gap);
+        column-gap: var(--section-target-inner-gap);
+    }
+    &-background {
+        @media screen and (max-width: 1199.98px) {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 19.25rem;
+            height: 100%;
+            transform: translate(-50%, calc(var(--section-target-padding-y)));
+        }
+        @media (min-width: 1200px) {
+            width: fit-content;
+            height: 25.125rem;
+            transform: translateY(var(--section-target-padding-y));
+        }
+        & > * {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &-title {
+        position: relative;
+        padding-left: 2.5rem;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0.625rem;
+            height: 100%;
+            background: var(--primary);
+            border-radius: 0.06rem;
+        }
+        & > * {
+            line-height: 120%;
+        }
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--section-target-content-gap);
+        column-gap: var(--section-target-content-gap);
+        @media (min-width: 1200px) {
+            flex-direction: row;
+            align-items: flex-end;
+        }
+    }
+    &-list {
+        & ul {
+            & li {
+                font-weight: 300;
+                font-size: 1rem;
+                line-height: 150%;
+                letter-spacing: 0.05em;
+                @media (min-width: 1200px) {
+                    font-size: 1.62rem;
+                }
+                &:not(:first-of-type) {
+                    margin-top: 1.875rem;
+                    @media (min-width: 1200px) {
+                        margin-top: 3.75rem;
+                    }
+                }
+            }
+        }
+    }
 }

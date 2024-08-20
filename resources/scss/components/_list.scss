@@ -1,0 +1,10 @@
+.list {
+    margin: 0;
+    &-item {
+        position: relative;
+        &::marker {
+            font-size: xx-large;
+            color: var(--primary);
+        }
+    }
+}
