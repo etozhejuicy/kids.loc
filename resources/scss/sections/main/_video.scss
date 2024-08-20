@@ -1,0 +1,113 @@
+@import "../../parts/video-card";
+
+:root {
+    --section-video-padding-y: 3.75rem;
+    --section-video-inner-gap: 3.75rem;
+    --section-video-content-gap: 1.875rem;
+    @media (min-width: 1200px) {
+        --section-video-inner-gap: 6.25rem;
+        --section-video-content-gap: 3.125rem;
+    }
+}
+
+.section-video {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 100%;
+    padding: var(--section-video-padding-y) 0;
+    overflow: hidden;
+    @media (min-width: 1200px) {
+        padding: var(--section-video-padding-y) 0 calc(var(--section-video-padding-y) + 2.5rem);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
+        border-radius: none;
+        @media (min-width: 1200px) {
+            border-radius: 15rem 15rem 0 0;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: var(--yellow);
+    }
+    &-inner {
+        position: relative;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--section-video-inner-gap);
+        column-gap: var(--section-video-inner-gap);
+    }
+    &-content {
+        position: relative;
+        z-index: 4;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -3;
+            width: 100%;
+            height: 100%;
+            background-image: url("/public_html/assets/images/pages/main/sections/video/circles-1.svg");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
+            transform: translate(-65%, 0%);
+            @media (min-width: 1200px) {
+                width: 50rem;
+                height: 50rem;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: translate(-25%, -25%);
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -3;
+            width: 100%;
+            height: 100%;
+            background-image: url("/public_html/assets/images/pages/main/sections/video/circles-2.svg");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
+            transform: translate(65%, 50%);
+            @media (min-width: 1200px) {
+                width: 50rem;
+                height: 50rem;
+                background-position: center;
+                transform: translate(45%, 0%);
+            }
+        }
+        & > .row {
+            --bs-gutter-x: var(--section-video-content-gap);
+            --bs-gutter-y: var(--section-video-content-gap);
+        }
+    }
+    &-title {
+        & > * {
+            position: relative;
+            z-index: 5;
+        }
+    }
+}
