@@ -1,0 +1,54 @@
+@import "../../parts/partner-card";
+
+:root {
+    --section-partners-padding-y: 3.75rem;
+    --section-partners-background: var(--white);
+    --section-partners-inner-gap: 3.75rem;
+    --section-partners-block-gap: 1.875rem;
+    --section-partners-list-gap: 1.875rem;
+    @media (min-width: 1200px) {
+        --section-partners-block-gap: 3.75rem;
+    }
+}
+
+.section-partners {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    padding: var(--section-partners-padding-y) 0;
+    background-color: var(--section-partners-background);
+    &-inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: var(--section-partners-inner-gap);
+        column-gap: var(--section-partners-inner-gap);
+        width: 100%;
+    }
+    &-block {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: var(--section-partners-block-gap);
+        column-gap: var(--section-partners-block-gap);
+        width: 100%;
+        &:nth-child(2) {
+            --partner-card-accent-color: var(--grey-500-rgb);
+        }
+    }
+    &-list {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        & > .row {
+            --bs-gutter-x: var(--section-partners-list-gap);
+            --bs-gutter-y: var(--section-partners-list-gap);
+        }
+    }
+}
