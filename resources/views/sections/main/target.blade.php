@@ -2,9 +2,9 @@
     <div class="container">
         <div class="section-target-inner">
             <div class="section-target-title">
-                <h4 class="h-4 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                <h3 class="h-3 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                     Наши цели
-                </h4>
+                </h3>
             </div>
             <div class="section-target-content">
                 <div class="section-target-background">
