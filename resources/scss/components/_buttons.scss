@@ -519,6 +519,8 @@
         --bs-btn-active-bg: #{darken($color, 15%)};
         --bs-btn-active-border-color: #{darken($color, 15%)};
         @if $value == "primary" {
+            --bs-btn-hover-color: #{lighten($color, 75%)};
+            --bs-btn-active-color: #{lighten($color, 50%)};
             --bs-btn-active-bg: #{darken($color, 25%)};
             --bs-btn-active-border-color: #{darken($color, 25%)};
         }

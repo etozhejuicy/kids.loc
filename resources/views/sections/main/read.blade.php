@@ -1,20 +1,22 @@
 <section class="section section-content section-read">
     <div class="container">
         <div class="section-read-inner">
-            <div class="section-read-content">
+            <div class="section-read-header">
                 <div class="section-read-subtitle">
                     читай с детьми
                 </div>
                 <div class="section-read-title">
-                    <h3 class="h-3 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                    <h4 class="h-2 text-primary wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                         Кемерево
-                    </h3>
+                    </h4>
                 </div>
+            </div>
+            <div class="section-read-content">
                 <div class="section-read-list">
                     <ul class="list">
-                        <li class="list-item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">Разжигать любовь к чтению у детей <br class="d-inline d-xl-none">и подростков, сделать книги <br class="d-none d-xl-inline">важной <br class="d-inline d-xl-none">частью их жизни;</li>
-                        <li class="list-item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.05s">Поддерживать родителей в создании <br class="d-inline d-xl-none">книжных традиций в семье;</li>
-                        <li class="list-item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">Развивать профессиональные навыки <br class="d-inline d-xl-none">педагогов и представителей <br class="d-none d-xl-inline">культурного <br class="d-inline d-xl-none">сообщества через специализированные <br class="d-inline d-xl-none">программы <br class="d-none d-xl-inline">и&nbsp;тренинги.</li>
+                        <li class="list-item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">выступления и лекции писателей и лидеров мнений (4);</li>
+                        <li class="list-item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.05s">«открытые уроки литературы» (2);</li>
+                        <li class="list-item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">экскурсионные программы в библиотеках и др. (4).</li>
                     </ul>
                 </div>
                 <div class="section-read-button">
@@ -24,7 +26,7 @@
                 </div>
             </div>
             <div class="section-read-picture">
-                <img data-src="/assets/images/pages/main/sections/read/example.svg" class="lazyload wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.05s" />
+                <img data-src="/assets/images/pages/main/sections/read/example.png" class="lazyload wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.05s" />
             </div>
         </div>
     </div>
