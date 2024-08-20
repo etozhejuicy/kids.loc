@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 })->name('index');
+
+// posts
+Route::get('/posts', function () {
+    return view('posts.index');
+})->name('posts.index');
+
+Route::get('/post/show', function () {
+    return view('posts.show');
+})->name('posts.show');
