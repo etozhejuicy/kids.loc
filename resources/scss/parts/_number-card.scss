@@ -1,0 +1,36 @@
+:root {
+    --number-card-gap: 0;
+}
+
+.number-card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    &-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--number-card-gap);
+        column-gap: var(--number-card-gap);
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 1.88rem;
+        line-height: 150%;
+        letter-spacing: 0.1em;
+        color: var(--primary);
+        @media (min-width: 1200px) {
+            font-size: 3rem;
+        }
+    }
+    &-description {
+        font-weight: 300;
+        font-size: 1.12rem;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        color: var(--dark-blue);
+        @media (min-width: 1200px) {
+            font-size: 1.62rem;
+        }
+    }
+}

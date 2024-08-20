@@ -1,0 +1,69 @@
+@import "../../parts/number-card";
+
+:root {
+    --section-numbers-background: linear-gradient(180deg, #ffdc55 0%, #ffaf01 50%, #ff7401 100%);
+    --section-numbers-padding-y: 3.75rem;
+    --section-numbers-inner-gap: 1rem;
+    --section-numbers-content-gap: 1.875rem;
+    @media (min-width: 1200px) {
+        --section-numbers-content-gap: 3.75rem;
+    }
+}
+
+.section-numbers {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    background-image: var(--section-numbers-background);
+    padding: var(--section-numbers-padding-y) 0 calc(var(--section-numbers-padding-y) * 1.75);
+    @media (min-width: 1200px) {
+        padding: var(--section-numbers-padding-y) 0 calc(var(--section-numbers-padding-y) * 3);
+    }
+    &-inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--section-numbers-inner-gap);
+        column-gap: var(--section-numbers-inner-gap);
+    }
+    &-content {
+        & > .row {
+            --bs-gutter-x: var(--section-numbers-content-gap);
+            --bs-gutter-y: var(--section-numbers-content-gap);
+            & > * {
+                &:nth-child(1) {
+                    order: 1;
+                }
+                &:nth-child(2) {
+                    order: 2;
+                    @media (min-width: 1200px) {
+                        order: 4;
+                    }
+                }
+                &:nth-child(3) {
+                    order: 3;
+                    @media (min-width: 1200px) {
+                        order: 2;
+                    }
+                }
+                &:nth-child(4) {
+                    order: 4;
+                    @media (min-width: 1200px) {
+                        order: 5;
+                    }
+                }
+                &:nth-child(5) {
+                    order: 5;
+                    @media (min-width: 1200px) {
+                        order: 3;
+                    }
+                }
+                &:nth-child(6) {
+                    order: 6;
+                }
+            }
+        }
+    }
+}
