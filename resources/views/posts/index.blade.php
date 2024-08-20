@@ -19,18 +19,16 @@
             </div>
             <div class="section-news-content">
                 <div class="row">
-                    @for ($i = 1; $i < 20; $i ++)
-                        @include('posts.item')
-                        @endfor
-                        </div>
-                </div>
-                <div class="section-news-action">
-                    <button type="button" class="btn btn-white btn-wider">
-                        Загрузить еще
-                    </button>
+                    @include('posts.block')
                 </div>
             </div>
+            <div class="section-news-action">
+                <button type="button" class="btn btn-white btn-wider">
+                    Загрузить еще
+                </button>
+            </div>
         </div>
+    </div>
 </section>
 @endsection
 
