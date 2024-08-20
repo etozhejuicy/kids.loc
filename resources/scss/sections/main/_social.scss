@@ -1,0 +1,51 @@
+@import "../../parts/social-card";
+
+:root {
+    --section-social-padding-y: 3.75rem;
+    --section-social-background: var(--white);
+    --section-social-inner-gap: 3.75rem;
+    --section-social-block-gap: 1.875rem;
+    --section-social-list-gap: 1.875rem;
+    @media (min-width: 1200px) {
+        --section-social-block-gap: 3.75rem;
+    }
+}
+
+.section-social {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    padding: var(--section-social-padding-y) 0;
+    background-color: var(--section-social-background);
+    &-inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: var(--section-social-inner-gap);
+        column-gap: var(--section-social-inner-gap);
+        width: 100%;
+    }
+    &-block {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: var(--section-social-block-gap);
+        column-gap: var(--section-social-block-gap);
+        width: 100%;
+    }
+    &-list {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        & > .row {
+            --bs-gutter-x: var(--section-social-list-gap);
+            --bs-gutter-y: var(--section-social-list-gap);
+        }
+    }
+}
