@@ -1,7 +1,7 @@
 h,
 .h {
     &-1 {
-        font-size: 2.125rem;
+        font-size: 2.25rem;
         font-style: normal;
         font-weight: 600;
         line-height: 100%;
@@ -13,7 +13,7 @@ h,
             font-size: 3.25rem;
         }
         @media (min-width: 1200px) {
-            font-size: 5rem;
+            font-size: 4.125rem;
         }
     }
     &-2 {
@@ -157,9 +157,7 @@ h6 {
 .article {
     &-h {
         &-1 {
-            font-feature-settings:
-                "clig" off,
-                "liga" off;
+            font-feature-settings: "clig" off, "liga" off;
             font-size: 1.875rem;
             font-style: normal;
             font-weight: 400;
@@ -175,9 +173,7 @@ h6 {
             }
         }
         &-2 {
-            font-feature-settings:
-                "clig" off,
-                "liga" off;
+            font-feature-settings: "clig" off, "liga" off;
             font-size: 1.5rem;
             font-style: normal;
             font-weight: 500;
@@ -190,9 +186,7 @@ h6 {
             }
         }
         &-3 {
-            font-feature-settings:
-                "clig" off,
-                "liga" off;
+            font-feature-settings: "clig" off, "liga" off;
             font-size: 1.25rem;
             font-style: normal;
             font-weight: 500;
@@ -205,9 +199,7 @@ h6 {
             }
         }
         &-4 {
-            font-feature-settings:
-                "clig" off,
-                "liga" off;
+            font-feature-settings: "clig" off, "liga" off;
             font-size: 1.063rem;
             font-style: normal;
             font-weight: 500;
