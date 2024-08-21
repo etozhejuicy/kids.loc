@@ -16,6 +16,7 @@ lazysizes.cfg.blurupMode = 'auto';
 
 // primary
 import './modules/jquery';
+import './modules/modal';
 
 import "./class/Button";
 import "./class/Menu";

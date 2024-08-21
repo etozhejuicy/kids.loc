@@ -24,7 +24,7 @@
                         <div class="col-auto">
                             <div class="menu-header-buttons">
                                 <div class="d-none d-xl-flex">
-                                    <a href="javascript://" class="btn btn-primary py-4 px-5 text-uppercase">Регистрация</a>
+                                    <a href="javascript://" class="btn btn-primary py-4 px-5 text-uppercase" data-modal-open="register">Регистрация</a>
                                 </div>
                                 <div class="d-flex d-xl-none">
                                     <a href="javascript://" class="btn btn-sm btn-icon btn-white">
@@ -34,7 +34,7 @@
                                     </a>
                                 </div>
                                 <div class="d-flex d-xl-none">
-                                    <a href="javascript://" class="btn btn-sm btn-icon btn-white">
+                                    <a href="javascript://" class="btn btn-sm btn-icon btn-white" data-modal-open="register">
                                         <svg fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                             <use xlink:href="/sprite.svg#signout"></use>
                                         </svg>

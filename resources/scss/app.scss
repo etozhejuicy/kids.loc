@@ -21,6 +21,7 @@
 @import "./components/hr";
 @import "./components/icons";
 @import "./components/items";
+@import "./components/modals";
 @import "./components/lazyload";
 @import "./components/list";
 @import "./components/progress";
@@ -115,7 +116,9 @@ body {
 .ls-blur-up-img {
     filter: blur(0.625rem);
     opacity: 1;
-    transition: opacity 1000ms, filter 1500ms;
+    transition:
+        opacity 1000ms,
+        filter 1500ms;
 }
 
 .ls-blur-up-img.ls-inview.ls-original-loaded {

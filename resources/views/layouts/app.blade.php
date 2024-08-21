@@ -14,6 +14,7 @@
     </main>
 
     @include('layouts.footer')
+    @include('layouts.modals')
 </div>
 
 @include('layouts.scripts')
