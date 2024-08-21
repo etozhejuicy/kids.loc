@@ -3,7 +3,7 @@
         <div class="section-cities-inner">
             <div class="section-cities-title">
                 <h3 class="h-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
-                    Города
+                    Города проекта
                 </h3>
             </div>
             <div class="section-cities-content">
