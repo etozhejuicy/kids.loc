@@ -1,4 +1,4 @@
-<section class="section section-content section-target">
+<section class="section section-content section-target" id="ourTarget">
     <div class="container">
         <div class="section-target-inner">
             <div class="section-target-title">

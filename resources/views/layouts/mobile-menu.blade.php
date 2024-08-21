@@ -1,4 +1,4 @@
-<div class="menu menu-mobile menu-mobile-accent menu-mobile-accent-dark" data-lenis-prevent>
+<div class="menu menu-mobile menu-mobile-accent menu-mobile-accent-dark">
     <div class="menu-mobile-wrapper">
         <div class="menu-header" scroll-fixed>
             <div class="container">

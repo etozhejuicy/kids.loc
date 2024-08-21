@@ -1,4 +1,4 @@
-<section class="section section-content section-video">
+<section class="section section-content section-video" id="video">
     <div class="container">
         <div class="section-video-inner">
             <div class="section-video-title text-left text-md-center">

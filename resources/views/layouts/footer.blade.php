@@ -19,7 +19,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12" id="contacts">
                                 @include('blocks.contacts')
                             </div>
                         </div>
