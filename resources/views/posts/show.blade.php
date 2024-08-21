@@ -10,6 +10,8 @@
 
 @section('content')
 @include('sections.posts.cover')
+@include('sections.posts.post')
+@include('sections.posts.authors')
 @include('sections.posts.program')
 @include('sections.posts.video')
 @endsection

@@ -81,15 +81,15 @@
 }
 
 @mixin articleParagraph {
-    font-weight: 400;
-    font-size: 1.063rem;
-    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
     line-height: 150%;
+    letter-spacing: 0.05em;
     @media (min-width: 576px) {
-        font-size: 1.125rem;
+        font-size: 1.35rem;
     }
     @media (min-width: 1200px) {
-        font-size: 1.25rem;
+        font-size: 1.62rem;
     }
 }
 
