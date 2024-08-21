@@ -18,9 +18,47 @@
     background-color: var(--section-program-background);
     padding: var(--section-program-padding-y) 0;
     &-inner {
+        position: relative;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         row-gap: var(--section-program-inner-gap);
         column-gap: var(--section-program-inner-gap);
+        @media (min-width: 1200px) {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                z-index: -5;
+                width: 22.5rem;
+                height: 22.5rem;
+                background-image: url("/public_html/assets/images/pages/posts/show/sections/program/bg-1.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                pointer-events: none;
+                transform: translate(-50%, 0%);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -5;
+                width: 22.5rem;
+                height: 22.5rem;
+                background-image: url("/public_html/assets/images/pages/posts/show/sections/program/bg-2.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                pointer-events: none;
+                transform: translate(40%, 40%);
+            }
+        }
+    }
+    &-content {
+        position: relative;
+        z-index: 1;
     }
 }

@@ -10,6 +10,7 @@
     z-index: 1;
     display: block;
     width: 100%;
+    padding: var(--section-photo-padding-y) 0;
     &-inner {
         position: relative;
         z-index: 1;

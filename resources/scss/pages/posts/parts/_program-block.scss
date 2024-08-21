@@ -3,6 +3,7 @@
     --program-block-content-gap: 0.9385rem;
     --program-block-content-padding-x: 0.625rem;
     --program-block-content-padding-y: 0.938rem;
+    --program-block-background-color: var(--white);
     --program-block-box-shadow-color: var(--true-black-rgb);
     @media (min-width: 1200px) {
         --program-block-gap: 3.75rem;
@@ -13,6 +14,8 @@
 }
 
 .program-block {
+    position: relative;
+    z-index: 10;
     color: var(--dark-blue);
     &-inner {
         display: flex;
@@ -40,6 +43,7 @@
         flex-direction: column;
         row-gap: var(--program-block-content-gap);
         column-gap: var(--program-block-content-gap);
+        background-color: var(--program-block-background-color);
         padding: var(--program-block-content-padding-y) var(--program-block-content-padding-x);
         box-shadow: 0 0 3.125rem 0 rgba(var(--program-block-box-shadow-color), 0.25);
         overflow: hidden;
