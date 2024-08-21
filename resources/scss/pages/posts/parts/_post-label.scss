@@ -1,0 +1,86 @@
+:root {
+    --post-label-content-gap: 5.313rem;
+    --post-label-content-padding: 0.313rem;
+    --post-label-content-background: var(--orange);
+    --post-label-content-color: var(--white);
+    @media (min-width: 768px) {
+        --post-label-content-gap: 0;
+        --post-label-content-padding: 1.875rem;
+    }
+}
+
+.post-label {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 1.875rem;
+    @media (min-width: 768px) {
+        height: 5.75rem;
+    }
+    @media (min-width: 1200px) {
+        height: 8.75rem;
+    }
+    &-icon {
+        width: 1.875rem;
+        height: 100%;
+        @media (min-width: 768px) {
+            width: 5.75rem;
+        }
+        @media (min-width: 1200px) {
+            width: 8.75rem;
+        }
+        & > * {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-content {
+        position: relative;
+        z-index: 4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: var(--post-label-content-gap);
+        column-gap: var(--post-label-content-gap);
+        padding: 0 var(--post-label-content-padding);
+        background-color: var(--post-label-content-background);
+        @media (min-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.15;
+        text-transform: uppercase;
+        color: var(--post-label-content-color);
+        @media (min-width: 768px) {
+            font-size: 2.62rem;
+        }
+        @media (min-width: 1200px) {
+            font-size: 5.62rem;
+        }
+    }
+    &-date {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: var(--post-label-content-color);
+        @media (min-width: 768px) {
+            font-size: 1.25rem;
+            transform: translateY(-0.5rem);
+        }
+        @media (min-width: 1200px) {
+            font-size: 1.88rem;
+            transform: translateY(-0.5rem);
+        }
+    }
+}

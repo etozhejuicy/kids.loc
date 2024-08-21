@@ -1,0 +1,44 @@
+.swiper-indicators {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+    & .swiper-slide {
+        width: 100%;
+        height: 0.19rem;
+        background: rgba(var(--white-rgb), 0.25);
+        border-radius: 0.12rem;
+        box-shadow: 0 0.125rem 0.625rem 0 rgba(var(--true-black-rgb), 0.25);
+        overflow: hidden;
+        @media (min-width: 1200px) {
+            height: 0.313rem;
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 0.12rem;
+            overflow: hidden;
+        }
+        &-thumb {
+            &-active {
+                background: rgba(var(--white-rgb), 0.5);
+                &::before {
+                    background-color: rgba(var(--white-rgb), 1);
+                    animation: slide-progress 2s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+                    height: 0.19rem;
+                    @media (min-width: 1200px) {
+                        height: 0.313rem;
+                    }
+
+                    .swiper-paused & {
+                        animation-play-state: paused;
+                    }
+                }
+            }
+        }
+    }
+}

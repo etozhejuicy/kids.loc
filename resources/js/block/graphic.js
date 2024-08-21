@@ -1,4 +1,5 @@
 import Swiper from "swiper/bundle";
+import 'swiper/css';
 import options from "../modules/swiperOptions";
 
 var swiperGraphic = new Swiper(".swiper-graphic", $.extend({

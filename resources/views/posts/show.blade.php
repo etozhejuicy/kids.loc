@@ -9,8 +9,8 @@
 @endsection
 
 @section('content')
-
-<!-- видео с мероприятия -->
+@include('sections.posts.cover')
+@include('sections.posts.program')
 @include('sections.posts.video')
 @endsection
 
