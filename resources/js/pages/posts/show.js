@@ -1,5 +1,7 @@
 import Swiper from "swiper/bundle";
-import 'swiper/css';
+import "swiper/css";
+
+import "../../modules/tab";
 
 class Post {
     constructor() {
@@ -25,12 +27,12 @@ class Post {
             grabCursor: true,
             loop: true,
             thumbs: {
-                swiper: swiperIndicators
+                swiper: swiperIndicators,
             },
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
-            }
+            },
         });
 
         // setTimeout(function () {

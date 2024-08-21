@@ -1,7 +1,7 @@
 <section class="section section-content section-video">
     <div class="container">
         <div class="section-video-inner">
-            <div class="section-video-title text-left text-md-center">
+            <div class="section-video-title text-center text-md-left">
                 <h3 class="h-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                     Видео с мероприятия
                 </h3>

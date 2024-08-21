@@ -1,0 +1,15 @@
+:root {
+    --section-program-padding-y: 3.75rem;
+    --section-program-background: var(--white);
+}
+
+.section-program {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    background-color: var(--section-program-background);
+    padding: var(--section-program-padding-y) 0;
+    &-inner {
+    }
+}
