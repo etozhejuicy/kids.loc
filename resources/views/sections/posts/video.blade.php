@@ -3,7 +3,7 @@
         <div class="section-video-inner">
             <div class="section-video-title text-center text-md-left">
                 <h3 class="h-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
-                    Видео с мероприятия
+                    Видео с мероприятий
                 </h3>
             </div>
             <div class="section-video-content">

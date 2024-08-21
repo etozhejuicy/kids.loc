@@ -13,6 +13,7 @@
 @include('sections.posts.post')
 @include('sections.posts.authors')
 @include('sections.posts.program')
+@include('sections.posts.photo')
 @include('sections.posts.video')
 @endsection
 
