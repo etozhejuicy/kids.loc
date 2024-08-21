@@ -1,12 +1,13 @@
+@import "../parts/author-card";
+
 :root {
     --section-authors-padding-y: 3.75rem;
     --section-authors-inner-gap: 1.875rem;
     --section-authors-content-gap: 1.875rem;
     --section-authors-background: linear-gradient(0deg, rgba(255, 220, 85, 0.5) 0%, rgba(255, 72, 0, 0.5) 100%);
     @media (min-width: 1200px) {
-        --section-authors-padding-y: 6.25rem;
         --section-authors-inner-gap: 3.75rem;
-        --section-authors-content-gap: 3.75rem;
+        --section-authors-padding-y: 6.25rem;
     }
 }
 
@@ -20,6 +21,23 @@
     background-color: var(--yellow);
     background-repeat: no-repeat;
     background-size: cover;
+    &::before {
+        @media (min-width: 1200px) {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            width: 50rem;
+            height: 50rem;
+            background-image: url("/public_html/assets/images/pages/main/sections/news/circles-1.svg");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
+            transform: translate(-10%, -10%);
+        }
+    }
     &-inner {
         position: relative;
         z-index: 4;
@@ -28,5 +46,15 @@
         row-gap: var(--section-authors-inner-gap);
         column-gap: var(--section-authors-inner-gap);
         width: 100%;
+    }
+    &-content {
+        & .authors-block {
+            & .authors-block-content {
+                & > .row {
+                    --bs-gutter-x: var(--section-authors-content-gap);
+                    --bs-gutter-y: var(--section-authors-content-gap);
+                }
+            }
+        }
     }
 }

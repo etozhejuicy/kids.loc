@@ -21,6 +21,24 @@
     background-color: var(--yellow);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    &::before {
+        @media (min-width: 1200px) {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 50rem;
+            height: 50rem;
+            background-image: url("/public_html/assets/images/pages/main/sections/news/circles-1.svg");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+        }
+    }
     &-inner {
         position: relative;
         z-index: 4;

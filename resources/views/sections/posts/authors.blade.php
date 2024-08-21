@@ -1,7 +1,7 @@
 <section class="section section-content section-authors">
     <div class="container">
         <div class="section-authors-inner">
-            <div class="section-authors-title">
+            <div class="section-authors-title text-center text-md-left">
                 <h3 class="h-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                     Писатели
                 </h3>
