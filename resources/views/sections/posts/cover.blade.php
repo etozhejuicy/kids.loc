@@ -58,11 +58,18 @@
                     <img data-src="/assets/images/pages/posts/show/sections/cover/label-icon.svg" class="lazyload" />
                 </div>
                 <div class="post-label-content">
-                    <div class="post-label-title">
-                        Кемерово
+                    <div class="post-label-header">
+                        <div class="post-label-title">
+                            Кемерово
+                        </div>
                     </div>
-                    <div class="post-label-date">
-                        6-8 сентября 2024
+                    <div class="post-label-body">
+                        <div class="post-label-name">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="post-label-date">
+                            6-8 сентября 2024
+                        </div>
                     </div>
                 </div>
             </div>
