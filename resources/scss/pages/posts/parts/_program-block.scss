@@ -1,0 +1,19 @@
+:root {
+    --program-block-gap: 1.875rem;
+    @media (min-width: 1200px) {
+        --program-block-gap: 3.75rem;
+    }
+}
+
+.program-block {
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--program-block-gap);
+        column-gap: var(--program-block-gap);
+        @media (min-width: 1200px) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+}
