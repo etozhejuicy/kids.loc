@@ -12,11 +12,18 @@
     aspect-ratio: var(--photo-card-aspect-ratio);
     background-color: var(--yellow);
     overflow: hidden;
+    @media (min-width: 768px) {
+        width: 30rem;
+        height: 16.875rem;
+        aspect-ratio: unset;
+    }
     &-inner {
         display: flex;
         flex-direction: column;
         row-gap: var(--photo-card-inner-gap);
         column-gap: var(--photo-card-inner-gap);
+        width: 100%;
+        height: 100%;
     }
     &-image {
         position: absolute;
