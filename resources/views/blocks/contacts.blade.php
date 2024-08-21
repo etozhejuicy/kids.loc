@@ -26,16 +26,6 @@
                     <span>email@gmail.com</span>
                 </a>
             </div>
-            <div class="col-12">
-                <div class="icon-link text-grey-700 fw-300">
-                    <span class="icon icon-size-1">
-                        <svg fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden=" true" focusable="false">
-                            <use xlink:href="/sprite.svg#location"></use>
-                        </svg>
-                    </span>
-                    <span>Москва, Краснопресненская набережная, д. 12</span>
-                </div>
-            </div>
         </div>
     </div>
 </div>
