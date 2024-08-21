@@ -47,44 +47,55 @@
             }
         }
         & .swiper-nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            row-gap: 1.875rem;
+            column-gap: 1.875rem;
+            justify-content: space-between;
             @media screen and (max-width: 767.98px) {
                 position: absolute;
-                top: 50%;
-                left: 0;
+                // top: 50%;
+                // left: 0;
                 z-index: 1;
                 width: 100%;
-                transform: translateY(-50%);
+                // transform: translateY(-50%);
             }
             @media (min-width: 768px) {
                 position: relative;
                 z-index: 5;
-                display: block;
                 width: 100%;
                 height: 100%;
+                justify-content: flex-start;
                 margin-top: 1.44rem;
             }
-            & > .row {
-                --bs-gutter-x: 1.875rem;
-                justify-content: space-between;
-                @media (min-width: 768px) {
-                    justify-content: flex-start;
+            & > * {
+                @media screen and (max-width: 767.98px) {
+                    &:nth-child(1) {
+                        position: absolute;
+                        top: -50%;
+                        left: 0;
+                        z-index: 1;
+                        transform: translateY(-225%);
+                    }
+                    &:nth-child(2) {
+                        position: absolute;
+                        top: -50%;
+                        right: 0;
+                        z-index: 1;
+                        transform: translateY(-225%);
+                    }
                 }
-                & > * {
-                    &:last-of-type {
-                        display: none;
-                        @media (min-width: 768px) {
-                            display: block;
-                        }
+                &:last-of-type {
+                    display: none;
+                    @media (min-width: 768px) {
+                        display: block;
                     }
                 }
             }
         }
-        & .winner-scrollbar {
-            --swiper-scrollbar-drag-bg-color: linear-gradient(
-                90deg,
-                #ffaf01 0%,
-                #ff7401 100%
-            );
+        & .photos-scrollbar {
+            --swiper-scrollbar-drag-bg-color: linear-gradient(90deg, #ffaf01 0%, #ff7401 100%);
             --swiper-scrollbar-border-radius: 2.5rem;
             --swiper-scrollbar-margin-left: 2.06rem;
             display: flex;
@@ -93,7 +104,7 @@
             margin-left: var(--swiper-scrollbar-margin-left);
             height: 100%;
             & .swiper-scrollbar-drag {
-                height: 0.1875rem;
+                height: 0.625rem;
             }
         }
     }

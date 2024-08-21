@@ -42,7 +42,7 @@ class Post {
         if ($(".swiper-photos").length) {
             var swiperPhotos = new Swiper(".swiper-photos", {
                 slidesPerView: "auto",
-                spaceBetween: 0,
+                spaceBetween: -1,
                 scrollbar: {
                     el: ".photos-scrollbar",
                     draggable: true,

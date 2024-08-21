@@ -14,7 +14,9 @@
     z-index: 1;
     display: block;
     width: 100%;
-    transition: box-shadow 0.8s ease-in-out;
+    color: var(--dark-blue);
+    cursor: pointer;
+    transition: box-shadow 0.25s ease-in-out;
     &.active {
         box-shadow: 0 0 3.125rem 0 rgba(var(--program-link-box-shadow-color), 0.25);
     }

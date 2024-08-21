@@ -62,27 +62,19 @@
                             </div>
                         </div>
                         <div class="swiper-nav">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="swiper-btn photos-btn-prev">
-                                        <picture>
-                                            <source srcset="/assets/images/block/swiper/arrow-left.svg" media="(min-width: 768px)">
-                                            <img src="/assets/images/block/swiper/single-arrow-left.svg">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="swiper-btn photos-btn-next">
-                                        <picture>
-                                            <source srcset="/assets/images/block/swiper/arrow-right.svg" media="(min-width: 768px)">
-                                            <img src="/assets/images/block/swiper/single-arrow-right.svg">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="photos-scrollbar"></div>
-                                </div>
+                            <div class="swiper-btn photos-btn-prev">
+                                <picture>
+                                    <source srcset="/assets/images/block/swiper/arrow-left.svg" media="(min-width: 768px)">
+                                    <img src="/assets/images/block/swiper/single-arrow-left.svg">
+                                </picture>
                             </div>
+                            <div class="swiper-btn photos-btn-next">
+                                <picture>
+                                    <source srcset="/assets/images/block/swiper/arrow-right.svg" media="(min-width: 768px)">
+                                    <img src="/assets/images/block/swiper/single-arrow-right.svg">
+                                </picture>
+                            </div>
+                            <div class="photos-scrollbar"></div>
                         </div>
                     </div>
                 </div>
