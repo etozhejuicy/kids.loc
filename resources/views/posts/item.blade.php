@@ -5,6 +5,9 @@
                 <img data-src="" class="lazyload" />
             </div>
             <div class="news-card-content">
+                <div class="news-card-date">
+                    21.08.2024 в 17:00
+                </div>
                 <div class="news-card-title">
                     Lorem ipsum dolor sit amet
                 </div>

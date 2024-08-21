@@ -91,6 +91,9 @@
                             & .news-card-inner {
                                 flex-direction: row;
                             }
+                            & .news-card-date {
+                                align-self: flex-end;
+                            }
                             & .news-card-link {
                                 margin-top: 0.75rem;
                             }

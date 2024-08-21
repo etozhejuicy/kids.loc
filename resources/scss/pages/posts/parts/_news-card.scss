@@ -49,6 +49,16 @@
         padding: var(--news-card-content-padding-y) var(--news-card-content-padding-x);
         width: 100%;
     }
+    &-date {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 150%;
+        letter-spacing: 0.1em;
+        opacity: 0.65;
+        @media (min-width: 1200px) {
+            font-size: 1.25rem;
+        }
+    }
     &-title {
         font-weight: 600;
         font-size: 1.5rem;
