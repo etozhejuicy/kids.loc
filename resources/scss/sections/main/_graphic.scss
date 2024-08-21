@@ -78,6 +78,14 @@
             &:not(.swiper-slide-active) {
                 &:is(.swiper-slide-next) {
                     & .graphic-card {
+                        &-point {
+                            &::before {
+                                background-color: var(--yellow);
+                                box-shadow: unset;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
                         &-line {
                             opacity: 0.25;
                             min-height: 1.875rem;
@@ -99,6 +107,14 @@
             &:not(.swiper-slide-active) {
                 &:is(.swiper-slide-prev) {
                     & .graphic-card {
+                        &-point {
+                            &::before {
+                                background-color: var(--yellow);
+                                box-shadow: unset;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
                         &-line {
                             opacity: 0.25;
                             min-height: 1.875rem;
@@ -119,6 +135,14 @@
             }
             &:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next) {
                 & .graphic-card {
+                    &-point {
+                        &::before {
+                            background-color: var(--yellow);
+                            box-shadow: unset;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
                     &-line {
                         opacity: 0.05;
                         min-height: 0.875rem;
