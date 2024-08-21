@@ -19,7 +19,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12" id="contacts">
+                            <div class="col-12" id="contacts" data-scroll-center>
                                 @include('blocks.contacts')
                             </div>
                         </div>

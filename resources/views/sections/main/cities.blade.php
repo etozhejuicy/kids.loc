@@ -1,4 +1,4 @@
-<section class="section section-content section-cities" id="cities">
+<section class="section section-content section-cities" id="cities" data-scroll-center>
     <div class="container">
         <div class="section-cities-inner">
             <div class="section-cities-title">
