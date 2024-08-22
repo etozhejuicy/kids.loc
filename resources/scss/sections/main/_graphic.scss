@@ -25,15 +25,23 @@
     &::before {
         content: "";
         position: absolute;
-        top: calc(var(--section-graphic-padding-y) * 1.75);
+        top: calc(var(--section-graphic-padding-y) * 2.95);
         left: 0;
         z-index: 1;
         width: 100%;
         height: 100%;
         background-image: var(--section-graphic-before-bg);
         background-position: top center;
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: repeat-y;
+        @media (min-width: 768px) {
+            top: calc(var(--section-graphic-padding-y) * 2.5);
+        }
+        @media (min-width: 1200px) {
+            top: calc(var(--section-graphic-padding-y) * 1.75);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
     &-outer {
         @media (min-width: 1200px) {

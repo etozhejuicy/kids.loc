@@ -1,7 +1,11 @@
 :root {
-    --graphic-gap: 1.875rem;
-    --graphic-content-gap: 0.938rem;
+    --graphic-gap: 1.25rem;
+    --graphic-content-gap: 0rem;
     --graphic-color: var(--dark-blue);
+    @media (min-width: 768px) {
+        --graphic-gap: 1.875rem;
+        --graphic-content-gap: 0.938rem;
+    }
     @media (min-width: 1200px) {
         --graphic-gap: 2.5rem;
     }
