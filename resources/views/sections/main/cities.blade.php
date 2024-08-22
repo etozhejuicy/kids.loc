@@ -8,16 +8,23 @@
             </div>
             <div class="section-cities-content">
                 <div class="section-cities-list">
+                    <!-- Начало списка городов -->
                     <div class="row">
+                        <!-- Колонка карточки (для flexbox) -->
                         <div class="col-12 col-md-6 col-xl-4">
+                            <!-- Карточка -->
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                                <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
                                     <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
                                 </div>
+                                <!-- Область изображения -->
                                 <div class="city-card-content">
+                                    <!-- Заголовок карточки -->
                                     <div class="city-card-title">
                                         Кемерово
                                     </div>
+                                    <!-- Описание/дата карточки -->
                                     <div class="city-card-description">
                                         6-8 сентября
                                     </div>
@@ -25,15 +32,21 @@
                                 <a href="javascript://" class="stretched-link"></a>
                             </div>
                         </div>
+                        <!-- Колонка карточки (для flexbox) -->
                         <div class="col-12 col-md-6 col-xl-4">
+                            <!-- Карточка -->
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                                <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
                                     <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
                                 </div>
+                                <!-- Область изображения -->
                                 <div class="city-card-content">
+                                    <!-- Заголовок карточки -->
                                     <div class="city-card-title">
                                         Нижний Новгород
                                     </div>
+                                    <!-- Описание/дата карточки -->
                                     <div class="city-card-description">
                                         27-29 сентября
                                     </div>
@@ -41,15 +54,21 @@
                                 <a href="javascript://" class="stretched-link"></a>
                             </div>
                         </div>
+                        <!-- Колонка карточки (для flexbox) -->
                         <div class="col-12 col-md-6 col-xl-4">
+                            <!-- Карточка -->
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                                <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
                                     <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
                                 </div>
+                                <!-- Область изображения -->
                                 <div class="city-card-content">
+                                    <!-- Заголовок карточки -->
                                     <div class="city-card-title">
                                         Тверь
                                     </div>
+                                    <!-- Описание/дата карточки -->
                                     <div class="city-card-description">
                                         25-29 октября
                                     </div>
@@ -57,15 +76,21 @@
                                 <a href="javascript://" class="stretched-link"></a>
                             </div>
                         </div>
+                        <!-- Колонка карточки (для flexbox) -->
                         <div class="col-12 col-md-6 col-xl-4">
+                            <!-- Карточка -->
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                                <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
                                     <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
                                 </div>
+                                <!-- Область изображения -->
                                 <div class="city-card-content">
+                                    <!-- Заголовок карточки -->
                                     <div class="city-card-title">
                                         Казань
                                     </div>
+                                    <!-- Описание/дата карточки -->
                                     <div class="city-card-description">
                                         16-17 ноября
                                     </div>
@@ -73,15 +98,21 @@
                                 <a href="javascript://" class="stretched-link"></a>
                             </div>
                         </div>
+                        <!-- Колонка карточки (для flexbox) -->
                         <div class="col-12 col-md-6 col-xl-4">
+                            <!-- Карточка -->
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                                <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
                                     <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
                                 </div>
+                                <!-- Область изображения -->
                                 <div class="city-card-content">
+                                    <!-- Заголовок карточки -->
                                     <div class="city-card-title">
                                         Санкт-Петербург
                                     </div>
+                                    <!-- Описание/дата карточки -->
                                     <div class="city-card-description">
                                         ждите объявления даты
                                     </div>
@@ -89,15 +120,21 @@
                                 <a href="javascript://" class="stretched-link"></a>
                             </div>
                         </div>
+                        <!-- Колонка карточки (для flexbox) -->
                         <div class="col-12 col-md-6 col-xl-4">
+                            <!-- Карточка -->
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
+                                <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
                                     <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
                                 </div>
+                                <!-- Область изображения -->
                                 <div class="city-card-content">
+                                    <!-- Заголовок карточки -->
                                     <div class="city-card-title">
                                         Новосибирск
                                     </div>
+                                    <!-- Описание/дата карточки -->
                                     <div class="city-card-description">
                                         ждите объявления даты
                                     </div>
@@ -107,6 +144,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Кнопка показать еще -->
                 <div class="section-cities-action wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     <button type="button" class="btn btn-icon btn-primary btn-wider">
                         <span class="btn-icon-text">
@@ -117,6 +156,7 @@
                         </svg>
                     </button>
                 </div>
+                <!-- Кнопка показать еще -->
             </div>
         </div>
     </div>
