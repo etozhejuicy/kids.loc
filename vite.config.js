@@ -13,8 +13,8 @@ export default defineConfig({
 
                 'resources/js/app.js',
                 'resources/js/pages/index.js',
-                'resources/scss/pages/posts/index.js',
-                'resources/scss/pages/posts/show.js',
+                'resources/js/pages/posts/index.js',
+                'resources/js/pages/posts/show.js',
             ],
             postcss: {
                 plugins: [
