@@ -112,3 +112,71 @@
         }
     }
 }
+
+@mixin followSwiperGraphicCard {
+    .graphic-card {
+        --graphic-gap: 0.75rem;
+        --graphic-content-gap: 0.15rem;
+        @media (min-width: 1200px) {
+            --graphic-content-gap: 0.45rem;
+            --graphic-gap: 1.5rem;
+        }
+        &-point {
+            &::before {
+                background-color: var(--yellow);
+                box-shadow: unset;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &-line {
+            opacity: 0.25;
+            min-height: 1.875rem;
+            @media (min-width: 1200px) {
+                min-height: 3.125rem;
+            }
+        }
+        &-date {
+            font-size: smaller;
+            opacity: 0.25;
+        }
+        &-name {
+            font-size: smaller;
+            opacity: 0.25;
+        }
+    }
+}
+
+@mixin anotherSwiperGraphicCard {
+    .graphic-card {
+        --graphic-gap: 0.375rem;
+        --graphic-content-gap: 0.05rem;
+        @media (min-width: 1200px) {
+            --graphic-content-gap: 0.2rem;
+            --graphic-gap: 0.75rem;
+        }
+        &-point {
+            &::before {
+                background-color: var(--yellow);
+                box-shadow: unset;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &-line {
+            opacity: 0.05;
+            min-height: 0.875rem;
+            @media (min-width: 1200px) {
+                min-height: 1.563rem;
+            }
+        }
+        &-date {
+            font-size: xx-small;
+            opacity: 0.05;
+        }
+        &-name {
+            font-size: xx-small;
+            opacity: 0.05;
+        }
+    }
+}

@@ -1,3 +1,5 @@
+@import "../../utilities/mixins.scss";
+
 @import "../../parts/graphic-card";
 
 :root {
@@ -18,19 +20,25 @@
     padding: var(--section-graphic-padding-y) 0;
     overflow: hidden;
     @media (min-width: 1200px) {
-        padding: var(--section-graphic-padding-y) 0 calc(var(--section-graphic-padding-y) / 1.5);
+        padding: var(--section-graphic-padding-y) 0 4.563rem;
     }
     &::before {
         content: "";
         position: absolute;
-        top: calc(var(--section-graphic-padding-y) * 2);
+        top: calc(var(--section-graphic-padding-y) * 1.75);
         left: 0;
         z-index: 1;
         width: 100%;
         height: 100%;
         background-image: var(--section-graphic-before-bg);
-        background-position: center;
+        background-position: top center;
         background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &-outer {
+        @media (min-width: 1200px) {
+            padding-top: 1.25rem;
+        }
     }
     &-swiper {
         position: relative;
@@ -77,88 +85,16 @@
             }
             &:not(.swiper-slide-active) {
                 &:is(.swiper-slide-next) {
-                    & .graphic-card {
-                        &-point {
-                            &::before {
-                                background-color: var(--yellow);
-                                box-shadow: unset;
-                                opacity: 1;
-                                visibility: visible;
-                            }
-                        }
-                        &-line {
-                            opacity: 0.25;
-                            min-height: 1.875rem;
-                            @media (min-width: 1200px) {
-                                min-height: 3.125rem;
-                            }
-                        }
-                        &-date {
-                            font-size: smaller;
-                            opacity: 0.25;
-                        }
-                        &-name {
-                            font-size: smaller;
-                            opacity: 0.25;
-                        }
-                    }
+                    @include followSwiperGraphicCard;
                 }
             }
             &:not(.swiper-slide-active) {
                 &:is(.swiper-slide-prev) {
-                    & .graphic-card {
-                        &-point {
-                            &::before {
-                                background-color: var(--yellow);
-                                box-shadow: unset;
-                                opacity: 1;
-                                visibility: visible;
-                            }
-                        }
-                        &-line {
-                            opacity: 0.25;
-                            min-height: 1.875rem;
-                            @media (min-width: 1200px) {
-                                min-height: 3.125rem;
-                            }
-                        }
-                        &-date {
-                            font-size: small;
-                            opacity: 0.25;
-                        }
-                        &-name {
-                            font-size: small;
-                            opacity: 0.25;
-                        }
-                    }
+                    @include followSwiperGraphicCard;
                 }
             }
             &:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next) {
-                & .graphic-card {
-                    &-point {
-                        &::before {
-                            background-color: var(--yellow);
-                            box-shadow: unset;
-                            opacity: 1;
-                            visibility: visible;
-                        }
-                    }
-                    &-line {
-                        opacity: 0.05;
-                        min-height: 0.875rem;
-                        @media (min-width: 1200px) {
-                            min-height: 1.563rem;
-                        }
-                    }
-                    &-date {
-                        font-size: xx-small;
-                        opacity: 0.05;
-                    }
-                    &-name {
-                        font-size: xx-small;
-                        opacity: 0.05;
-                    }
-                }
+                @include anotherSwiperGraphicCard;
             }
         }
         & .swiper-btn {
