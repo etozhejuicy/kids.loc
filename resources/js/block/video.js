@@ -13,19 +13,32 @@ class Video {
     swiper() {
         if ($(".section-video-swiper").length) {
             var swiperVideo = new Swiper(".swiper-video", {
+                preventClicks: true,
+                preventClicksPropagation: true,
                 slidesPerView: 1,
-                spaceBetween: 100,
-                clickable: true,
                 allowTouchMove: true,
                 grabCursor: true,
                 pagination: {
-                    el: ".section-video .video-pagination",
+                    el: ".section-video .video-pagination, .swiper-video .video-pagination-2",
                     type: "bullets",
+                    clickable: true,
                 },
                 autoplay: {
                     delay: 2500,
-                    disableOnInteraction: false,
+                    disableOnInteraction: true,
                 },
+                on: {
+                    paginationClick: function (swiperVideo, e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        swiperVideo.autoplay.stop();
+                    },
+                    click: function (swiperVideo, e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        swiperVideo.autoplay.stop();
+                    },
+                }
             });
             setTimeout(function () {
                 if (swiperVideo.update) {

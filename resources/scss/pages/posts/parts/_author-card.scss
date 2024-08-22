@@ -36,7 +36,9 @@
         overflow: hidden;
         & > img,
         & > image,
-        & > picture {
+        & > picture,
+        & > svg,
+        & > object {
             position: absolute;
             top: 0;
             left: 0;

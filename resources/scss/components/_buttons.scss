@@ -579,58 +579,58 @@
             --bs-border-radius: var(--bs-border-radius-pill);
         }
     }
-    .btn-check + :is(.btn-#{$value}) {
-        --bs-btn-color: var(--grey);
-        --bs-btn-bg: var(--dark-grey);
-        --bs-btn-border-color: var(--bs-btn-bg);
-        --bs-btn-hover-color: var(--white);
-        --bs-btn-hover-bg: var(--bs-btn-border-color);
-        --bs-btn-hover-border-color: rgba(var(--#{$value}-rgb), 0.5);
-        --bs-btn-active-color: var(--white);
-        --bs-btn-active-bg: var(--#{$value});
-        --bs-btn-active-border-color: var(--#{$value});
-        @if $value == "primary" {
-            --bs-btn-color: var(--grey);
-            --bs-btn-bg: var(--dark-grey);
-            --bs-btn-border-color: var(--dark-grey);
-            --bs-btn-active-color: var(--dark-grey);
-            --bs-btn-hover-border-color: #{lighten($color, 20%)};
-            --bs-btn-active-border-color: #{lighten($color, 20%)};
-        }
-        @if $value == "secondary" {
-            --bs-btn-color: var(--grey);
-            --bs-btn-active-color: var(--white);
-            --bs-btn-hover-border-color: #{lighten($color, 50%)};
-            --bs-btn-active-border-color: #{lighten($color, 50%)};
-        }
-        @if $value == "warning" {
-            --bs-btn-active-color: var(--black);
-        }
-        @if $value == "white" {
-            --bs-btn-active-color: var(--black);
-        }
-    }
-    .btn-check + :is(.btn-outline-#{$value}) {
-        --bs-btn-color: var(--grey);
-        --bs-btn-bg: var(--dark-grey);
-        --bs-btn-border-color: var(--bs-btn-bg);
-        --bs-btn-hover-color: var(--white);
-        --bs-btn-hover-bg: var(--bs-btn-border-color);
-        --bs-btn-hover-border-color: rgba(var(--#{$value}-rgb), 0.5);
-        --bs-btn-active-color: var(--#{$value});
-        --bs-btn-active-bg: var(--dark-grey);
-        --bs-btn-active-border-color: var(--#{$value});
-        @if $value == "primary" {
-            --bs-btn-active-border-color: #{darken($color, 25%)};
-        }
-        @if $value == "secondary" {
-            --bs-btn-hover-border-color: #{lighten($color, 20%)};
-            --bs-btn-hover-color: var(--white);
-            --bs-btn-active-bg: var(--dark-grey);
-            --bs-btn-active-color: #{lighten($color, 30%)};
-            --bs-btn-active-border-color: #{lighten($color, 30%)};
-        }
-    }
+    // .btn-check + :is(.btn-#{$value}) {
+    //     --bs-btn-color: var(--grey);
+    //     --bs-btn-bg: var(--dark-grey);
+    //     --bs-btn-border-color: var(--bs-btn-bg);
+    //     --bs-btn-hover-color: var(--white);
+    //     --bs-btn-hover-bg: var(--bs-btn-border-color);
+    //     --bs-btn-hover-border-color: rgba(var(--#{$value}-rgb), 0.5);
+    //     --bs-btn-active-color: var(--white);
+    //     --bs-btn-active-bg: var(--#{$value});
+    //     --bs-btn-active-border-color: var(--#{$value});
+    //     @if $value == "primary" {
+    //         --bs-btn-color: var(--grey);
+    //         --bs-btn-bg: var(--dark-grey);
+    //         --bs-btn-border-color: var(--dark-grey);
+    //         --bs-btn-active-color: var(--dark-grey);
+    //         --bs-btn-hover-border-color: #{lighten($color, 20%)};
+    //         --bs-btn-active-border-color: #{lighten($color, 20%)};
+    //     }
+    //     @if $value == "secondary" {
+    //         --bs-btn-color: var(--grey);
+    //         --bs-btn-active-color: var(--white);
+    //         --bs-btn-hover-border-color: #{lighten($color, 50%)};
+    //         --bs-btn-active-border-color: #{lighten($color, 50%)};
+    //     }
+    //     @if $value == "warning" {
+    //         --bs-btn-active-color: var(--black);
+    //     }
+    //     @if $value == "white" {
+    //         --bs-btn-active-color: var(--black);
+    //     }
+    // }
+    // .btn-check + :is(.btn-outline-#{$value}) {
+    //     --bs-btn-color: var(--grey);
+    //     --bs-btn-bg: var(--dark-grey);
+    //     --bs-btn-border-color: var(--bs-btn-bg);
+    //     --bs-btn-hover-color: var(--white);
+    //     --bs-btn-hover-bg: var(--bs-btn-border-color);
+    //     --bs-btn-hover-border-color: rgba(var(--#{$value}-rgb), 0.5);
+    //     --bs-btn-active-color: var(--#{$value});
+    //     --bs-btn-active-bg: var(--dark-grey);
+    //     --bs-btn-active-border-color: var(--#{$value});
+    //     @if $value == "primary" {
+    //         --bs-btn-active-border-color: #{darken($color, 25%)};
+    //     }
+    //     @if $value == "secondary" {
+    //         --bs-btn-hover-border-color: #{lighten($color, 20%)};
+    //         --bs-btn-hover-color: var(--white);
+    //         --bs-btn-active-bg: var(--dark-grey);
+    //         --bs-btn-active-color: #{lighten($color, 30%)};
+    //         --bs-btn-active-border-color: #{lighten($color, 30%)};
+    //     }
+    // }
     .btn-tag {
         &:is(.btn-#{$value}),
         &:is(.btn-outline-#{$value}) {
