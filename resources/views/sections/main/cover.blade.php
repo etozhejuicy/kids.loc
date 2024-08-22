@@ -20,5 +20,18 @@
                 </div>
             </div>
         </div>
+        <div class="section-cover-label">
+            <div class="cover-label">
+                <div class="cover-label-inner">
+                    <div class="cover-label-title">
+                        При поддержке:
+                    </div>
+                    <div class="cover-label-logo">
+                        <img data-src="/assets/images/pages/main/sections/partners/example.svg" class="lazyload" />
+                    </div>
+                </div>
+                <a href="javascript://" target="_blank" class="stretched-link"></a>
+            </div>
+        </div>
     </div>
 </section>

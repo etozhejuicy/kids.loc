@@ -1,5 +1,13 @@
+@import "../../parts/cover-label";
+
 :root {
     --section-cover-content-padding-y: 3.125rem;
+    --section-cover-label-top: 3.875rem;
+    --section-cover-label-right: 0rem;
+    @media (min-width: 1200px) {
+        --section-cover-label-top: 6.25rem;
+        --section-cover-label-right: 7.813rem;
+    }
 }
 
 .section-cover {
@@ -164,5 +172,13 @@
         @media (min-width: 1200px) {
             font-size: 4.12rem;
         }
+    }
+    &-label {
+        position: absolute;
+        top: var(--section-cover-label-top);
+        right: var(--section-cover-label-right);
+        z-index: 10;
+        width: fit-content;
+        height: fit-content;
     }
 }
