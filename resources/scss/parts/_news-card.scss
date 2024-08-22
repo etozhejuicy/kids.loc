@@ -1,6 +1,7 @@
 :root {
     --news-card-background: var(--white);
     --news-card-cover-background: var(--grey-200);
+    --news-card-box-shadow: 0 0 3.125rem 0 rgba(var(--true-black-rgb), 0.25);
     --news-card-aspect-ratio: 16 / 9;
     --news-card-inner-gap: 1.875rem;
     --news-card-content-gap: 0.938rem;
@@ -20,7 +21,12 @@
     width: 100%;
     height: 100%;
     background: var(--news-card-background);
+    box-shadow: unset;
     overflow: hidden;
+    transition: box-shadow 0.4s ease-in-out;
+    &:hover {
+        box-shadow: var(--news-card-box-shadow);
+    }
     &-inner {
         display: flex;
         flex-direction: column;
