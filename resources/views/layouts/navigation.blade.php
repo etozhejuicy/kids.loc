@@ -1,3 +1,4 @@
+<!-- атрибут data-menu-close необходим, если используем навигацию в мобильном меню для его закрытия -->
 <li class="nav-item">
     <a href="{{ Route('index') }}#ourTarget" class="nav-link" data-menu-close="">Наши цели</a>
 </li>

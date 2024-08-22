@@ -89,6 +89,7 @@
         </div>
     </div>
 </div>
+<!-- модалка регистрации -->
 
 <!-- модалка входа -->
 <div class="modal modal-form modal-narrow" data-modal-id="login">
@@ -154,6 +155,7 @@
         </div>
     </div>
 </div>
+<!-- модалка входа -->
 
 <!-- модалка забыли пароль -->
 <div class="modal modal-form modal-narrow" data-modal-id="forgotPassword">
@@ -202,6 +204,7 @@
         </div>
     </div>
 </div>
+<!-- модалка забыли пароль -->
 
 <!-- В случае успеха чего-либо -->
 <div class="modal" data-modal-id="success">
@@ -232,3 +235,4 @@
         </div>
     </div>
 </div>
+<!-- В случае успеха чего-либо -->

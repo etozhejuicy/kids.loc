@@ -18,8 +18,9 @@ lazysizes.cfg.blurupMode = 'auto';
 import './modules/jquery';
 import './modules/modal';
 
+// js-modules
 import '../../../js-modules/scroller';
 
-import "./class/Button";
+// modules
 import "./class/Menu";
 import "./class/Header";
