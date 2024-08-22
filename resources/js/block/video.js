@@ -19,7 +19,7 @@ class Video {
                 allowTouchMove: true,
                 grabCursor: true,
                 pagination: {
-                    el: ".section-video .video-pagination, .swiper-video .video-pagination-2",
+                    el: ".section-video .video-pagination",
                     type: "bullets",
                     clickable: true,
                 },

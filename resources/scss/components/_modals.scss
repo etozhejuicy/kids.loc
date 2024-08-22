@@ -146,4 +146,17 @@
             }
         }
     }
+    &-narrow {
+        & .modal-dialog {
+            @media (min-width: 768px) {
+                max-width: 38rem;
+            }
+            @media (min-width: 992px) {
+                max-width: 38rem;
+            }
+            @media (min-width: 1200px) {
+                max-width: 38rem;
+            }
+        }
+    }
 }

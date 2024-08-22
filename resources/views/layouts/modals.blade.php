@@ -91,7 +91,7 @@
 </div>
 
 <!-- модалка входа -->
-<div class="modal modal-form" data-modal-id="login">
+<div class="modal modal-form modal-narrow" data-modal-id="login">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -131,17 +131,68 @@
 
                     <div class="col-12">
                         <div class="modal-footer">
-                            <div class="row g-4 align-items-start align-items-md-center justify-content-end">
-                                <div class="col-12 col-md-auto">
+                            <div class="row g-4 align-items-center-center justify-content-end">
+                                <div class="col-7 col-md-8">
                                     <button type="submit" class="btn btn-outline-primary rounded-pill w-100">
                                         Войти
                                     </button>
                                 </div>
-                                <div class="col-12 col-md">
+                                <div class="col-5 col-md-4 d-flex align-self-center">
+                                    <a href="javascript://" class="text-1" data-modal-open="forgotPassword" btn-modal-close>Забыли пароль?</a>
+                                </div>
+                                <div class="col-12">
                                     <span class="text-1">
                                         Нет аккаунта?
                                     </span>
-                                    <a href="javascript://" class="text-primary text-1" target="_blank" data-modal-open="register" btn-modal-close>Зарегистрируйтесь!</a>
+                                    <a href="javascript://" class="text-primary text-1" data-modal-open="register" btn-modal-close>Зарегистрируйтесь!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- модалка забыли пароль -->
+<div class="modal modal-form modal-narrow" data-modal-id="forgotPassword">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title text-left">
+                    Забыли пароль?
+                </div>
+                <button type="button" class="modal-close" btn-close-modal></button>
+            </div>
+            <div class="modal-body">
+                <form data-ajax-form class="row register-form" id="login_form" action="?">
+                    @csrf
+
+                    <input type="hidden" name="remember" value="1">
+
+                    <div class="col-12">
+                        <div class="text-1">
+                            Введите электронный адрес, на который<br>
+                            зарегистрирован аккаунт. Мы вышлем письмо<br>
+                            с возможностью восстановления.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="email" name="email" class="form-control w-100" value="" placeholder="E-mail" required autofocus />
+                            <label for="email">E-mail</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="modal-footer">
+                            <div class="row g-4 align-items-center justify-content-center">
+                                <div class="col-12 col-md-auto">
+                                    <button type="submit" class="btn btn-outline-primary rounded-pill w-100">
+                                        Отправить
+                                    </button>
                                 </div>
                             </div>
                         </div>
