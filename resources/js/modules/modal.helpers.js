@@ -29,7 +29,6 @@ const modalHelpers = {
 
     hideAll() {
         if ($("[data-modal-id].show").length > 0) {
-            LenisScroll.start();
             modalHelpers.hide($("[data-modal-id].show"));
         }
     },

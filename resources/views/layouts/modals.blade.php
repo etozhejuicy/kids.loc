@@ -79,7 +79,69 @@
                                     <span class="text-1">
                                         Уже есть аккаунт?
                                     </span>
-                                    <a href="javascript://" class="text-primary text-1" target="_blank">Авторизируйтесь!</a>
+                                    <a href="javascript://" class="text-primary text-1" data-modal-open="login" btn-modal-close>Авторизируйтесь!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- модалка входа -->
+<div class="modal modal-form" data-modal-id="login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title text-left">
+                    Войти
+                </div>
+                <button type="button" class="modal-close" btn-close-modal></button>
+            </div>
+            <div class="modal-body">
+                <form data-ajax-form class="row register-form" id="login_form" action="?">
+                    @csrf
+
+                    <input type="hidden" name="remember" value="1">
+
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="email" name="email" class="form-control w-100" value="" placeholder="E-mail" />
+                            <label for="email">E-mail</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input name="password" type="password" class="form-control w-100" value="" placeholder="Пароль" />
+                            <label for="password">Пароль</label>
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="form-check form-check-center">
+                            <input class="form-check-input" name="remember" type="checkbox" id="rememberMe" checked>
+                            <label class="form-check-label text-1" for="rememberMe">
+                                Запомнить меня
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="modal-footer">
+                            <div class="row g-4 align-items-start align-items-md-center justify-content-end">
+                                <div class="col-12 col-md-auto">
+                                    <button type="submit" class="btn btn-outline-primary rounded-pill w-100">
+                                        Войти
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <span class="text-1">
+                                        Нет аккаунта?
+                                    </span>
+                                    <a href="javascript://" class="text-primary text-1" target="_blank" data-modal-open="register" btn-modal-close>Зарегистрируйтесь!</a>
                                 </div>
                             </div>
                         </div>
