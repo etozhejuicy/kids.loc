@@ -25,14 +25,14 @@
 
                     <div class="col-12 col-xl-6">
                         <div class="form-floating">
-                            <input type="name" name="region" class="form-control w-100" id="userRegion" value="" placeholder="Регион *" />
+                            <input type="name" name="region" class="form-control w-100" id="userRegion" value="" placeholder="Регион *" data-region />
                             <label for="userRegion">Регион *</label>
                         </div>
                     </div>
 
                     <div class="col-12 col-xl-6">
                         <div class="form-floating">
-                            <input type="name" name="city" class="form-control w-100" id="userCity" value="" placeholder="Город *" />
+                            <input type="name" name="city" class="form-control w-100" id="userCity" value="" placeholder="Город *" data-city />
                             <label for="userCity">Город *</label>
                         </div>
                     </div>
