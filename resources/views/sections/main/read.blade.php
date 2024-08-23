@@ -11,6 +11,7 @@
                     <h4 class="h-1 text-primary wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                         Кемерево
                     </h4>
+                    <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                 </div>
             </div>
             <!-- Зона контента секции -->

@@ -144,6 +144,9 @@
             font-size: smaller;
             opacity: 0.25;
         }
+        & .stretched-link {
+            display: none;
+        }
     }
 }
 
@@ -178,5 +181,56 @@
             font-size: xx-small;
             opacity: 0.05;
         }
+        & .stretched-link {
+            display: none;
+        }
     }
+}
+
+@mixin scaleObjectXs {
+    transform: scale(1.05);
+}
+
+@mixin scaleObjectMd {
+    transform: scale(1.1);
+}
+
+@mixin scaleObjectXl {
+    transform: scale(1.15);
+}
+
+@mixin btnTelegram {
+    --social-color: #27a7e7;
+    --bs-btn-color: var(--white);
+    --bs-btn-bg: var(--yellow);
+    --bs-btn-border-color: var(--yellow);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--social-color);
+    --bs-btn-hover-border-color: var(--social-color);
+    --bs-btn-focus-shadow-rgb: var(--social-color);
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: hsl(from var(--social-color) h s calc(l - 15));
+    --bs-btn-active-border-color: hsl(from var(--social-color) h s calc(l - 15));
+    --bs-btn-active-shadow: inset 0 3px 5px hsl(from var(--social-color) h s calc(l - 15));
+    --bs-btn-disabled-color: rgba(var(--black-rgb), 0.4);
+    --bs-btn-disabled-bg: rgba(var(--black-rgb), 0.125);
+    --bs-btn-disabled-border-color: rgba(var(--black-rgb), 0.125);
+}
+
+@mixin btnVk {
+    --social-color: #0077ff;
+    --bs-btn-color: var(--white);
+    --bs-btn-bg: var(--yellow);
+    --bs-btn-border-color: var(--yellow);
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--social-color);
+    --bs-btn-hover-border-color: var(--social-color);
+    --bs-btn-focus-shadow-rgb: var(--social-color);
+    --bs-btn-active-color: var(--white);
+    --bs-btn-active-bg: hsl(from var(--social-color) h s calc(l - 15));
+    --bs-btn-active-border-color: hsl(from var(--social-color) h s calc(l - 15));
+    --bs-btn-active-shadow: inset 0 3px 5px hsl(from var(--social-color) h s calc(l - 15));
+    --bs-btn-disabled-color: rgba(var(--black-rgb), 0.4);
+    --bs-btn-disabled-bg: rgba(var(--black-rgb), 0.125);
+    --bs-btn-disabled-border-color: rgba(var(--black-rgb), 0.125);
 }

@@ -1,3 +1,5 @@
+@import "../utilities/mixins.scss";
+
 :root {
     --graphic-gap: 1.25rem;
     --graphic-content-gap: 0rem;
@@ -19,7 +21,13 @@
     align-items: flex-start;
     row-gap: var(--graphic-gap);
     column-gap: var(--graphic-gap);
-    min-width: 16.25rem;
+    min-width: 20rem;
+    @media (min-width: 576px) {
+        min-width: 16.25rem;
+    }
+    @media (min-width: 768px) {
+        min-width: 20.25rem;
+    }
     &-line {
         width: 0.0625rem;
         height: 100%;
@@ -91,7 +99,8 @@
         text-transform: uppercase;
         transition:
             font-size 0.8s ease,
-            opacity 0.8s ease;
+            opacity 0.8s ease,
+            transform 0.4s ease;
         @media (min-width: 1200px) {
             font-size: 3rem;
         }

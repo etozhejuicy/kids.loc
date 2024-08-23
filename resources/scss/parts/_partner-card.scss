@@ -1,3 +1,5 @@
+@import "../utilities/mixins.scss";
+
 :root {
     --partner-card-padding-x: 1rem;
     --partner-card-padding-y: 1rem;
@@ -24,7 +26,8 @@
     box-shadow: var(--partner-card-box-shadow);
     transition:
         box-shadow 0.4s ease-in-out,
-        border 0.4s ease-in-out;
+        border 0.4s ease-in-out,
+        transform 0.4s ease;
     &-inner {
         display: flex;
         flex-direction: column;
@@ -57,5 +60,6 @@
     &:hover {
         --partner-card-box-shadow: 0 0 3.125rem 0 rgba(var(--partner-card-accent-color), 0.15);
         border: 0.0625rem solid rgba(var(--partner-card-accent-color), 0.1);
+        @include scaleObjectMd;
     }
 }

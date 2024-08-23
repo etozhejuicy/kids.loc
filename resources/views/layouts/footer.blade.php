@@ -86,14 +86,14 @@
                                 <div class="footer-social">
                                     <div class="row">
                                         <div class="col-auto">
-                                            <a href="javascript://" target="_blank" class="btn btn-sm btn-icon btn-white text-yellow">
+                                            <a href="javascript://" target="_blank" class="btn btn-sm btn-icon btn-social btn-tg">
                                                 <svg fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden=" true" focusable="false">
                                                     <use xlink:href="/sprite.svg#telegram"></use>
                                                 </svg>
                                             </a>
                                         </div>
                                         <div class="col-auto">
-                                            <a href="javascript://" target="_blank" class="btn btn-sm btn-icon btn-white text-yellow">
+                                            <a href="javascript://" target="_blank" class="btn btn-sm btn-icon btn-social btn-vk">
                                                 <svg fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                                     <use xlink:href="/sprite.svg#vk"></use>
                                                 </svg>

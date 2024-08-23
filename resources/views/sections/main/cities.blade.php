@@ -29,7 +29,7 @@
                                         6-8 сентября
                                     </div>
                                 </div>
-                                <a href="javascript://" class="stretched-link"></a>
+                                <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                             </div>
                         </div>
                         <!-- Колонка карточки (для flexbox) -->
@@ -51,7 +51,7 @@
                                         27-29 сентября
                                     </div>
                                 </div>
-                                <a href="javascript://" class="stretched-link"></a>
+                                <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                             </div>
                         </div>
                         <!-- Колонка карточки (для flexbox) -->
@@ -73,7 +73,7 @@
                                         25-29 октября
                                     </div>
                                 </div>
-                                <a href="javascript://" class="stretched-link"></a>
+                                <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                             </div>
                         </div>
                         <!-- Колонка карточки (для flexbox) -->
@@ -95,7 +95,7 @@
                                         16-17 ноября
                                     </div>
                                 </div>
-                                <a href="javascript://" class="stretched-link"></a>
+                                <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                             </div>
                         </div>
                         <!-- Колонка карточки (для flexbox) -->
@@ -117,7 +117,7 @@
                                         ждите объявления даты
                                     </div>
                                 </div>
-                                <a href="javascript://" class="stretched-link"></a>
+                                <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                             </div>
                         </div>
                         <!-- Колонка карточки (для flexbox) -->
@@ -139,7 +139,7 @@
                                         ждите объявления даты
                                     </div>
                                 </div>
-                                <a href="javascript://" class="stretched-link"></a>
+                                <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                             </div>
                         </div>
                     </div>

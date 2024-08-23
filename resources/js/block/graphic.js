@@ -9,7 +9,15 @@ class Graphic {
 
     events() {
         if ($(".section-video-swiper").length) {
-            var swiperGraphic = new Swiper(
+            let swiperNav = $('.swiper-graphic .swiper-nav-place');
+
+            $(window).on('resize', () => {
+                swiperNav.css('right', $('.container').offset().left + 30);
+            });
+
+            swiperNav.css('right', $('.container').offset().left + 30);
+
+            let swiperGraphic = new Swiper(
                 ".swiper-graphic",
                 $.extend(
                     {

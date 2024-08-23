@@ -36,6 +36,8 @@
                                     Кемерево
                                 </div>
                             </div>
+                            <!-- Ссылка на город -->
+                            <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                         </div>
                     </div>
                     <!-- Слайд -->
@@ -57,6 +59,8 @@
                                     Нижний Новгород
                                 </div>
                             </div>
+                            <!-- Ссылка на город -->
+                            <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                         </div>
                     </div>
                     <!-- Слайд -->
@@ -78,6 +82,8 @@
                                     Тверь
                                 </div>
                             </div>
+                            <!-- Ссылка на город -->
+                            <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                         </div>
                     </div>
                     <!-- Слайд -->
@@ -99,6 +105,8 @@
                                     Казань
                                 </div>
                             </div>
+                            <!-- Ссылка на город -->
+                            <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                         </div>
                     </div>
                     <!-- Слайд -->
@@ -120,6 +128,8 @@
                                     Санкт-Петербург
                                 </div>
                             </div>
+                            <!-- Ссылка на город -->
+                            <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                         </div>
                     </div>
                     <!-- Слайд -->
@@ -141,26 +151,26 @@
                                     Новосибирск
                                 </div>
                             </div>
+                            <!-- Ссылка на город -->
+                            <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Навигационные элементы слайдера -->
                 <div class="swiper-nav-place">
-                    <div class="container">
-                        <div class="swiper-nav">
-                            <div class="row">
-                                <!-- Стрелочка влево -->
-                                <div class="col-auto">
-                                    <div class="swiper-btn graphic-btn-prev">
-                                        <img data-src="/assets/images/block/swiper/arrow-left.svg" class="lazyload">
-                                    </div>
+                    <div class="swiper-nav">
+                        <div class="row">
+                            <!-- Стрелочка влево -->
+                            <div class="col-auto">
+                                <div class="swiper-btn graphic-btn-prev">
+                                    <img data-src="/assets/images/block/swiper/arrow-left.svg" class="lazyload">
                                 </div>
-                                <!-- Стрелочка вправо -->
-                                <div class="col-auto">
-                                    <div class="swiper-btn graphic-btn-next">
-                                        <img data-src="/assets/images/block/swiper/arrow-right.svg" class="lazyload">
-                                    </div>
+                            </div>
+                            <!-- Стрелочка вправо -->
+                            <div class="col-auto">
+                                <div class="swiper-btn graphic-btn-next">
+                                    <img data-src="/assets/images/block/swiper/arrow-right.svg" class="lazyload">
                                 </div>
                             </div>
                         </div>

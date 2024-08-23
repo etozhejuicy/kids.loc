@@ -1,3 +1,5 @@
+@import "../utilities/mixins.scss";
+
 :root {
     --header-height: 5.063rem;
     --header-backdrop-filter: initial;
@@ -19,11 +21,7 @@
     height: var(--header-height);
     right: 0;
     padding: var(--header-padding-y) var(--header-padding-x);
-    background: linear-gradient(
-        0deg,
-        transparent 0%,
-        rgba(var(--header-background-color), 0.5) 100%
-    );
+    background: linear-gradient(0deg, transparent 0%, rgba(var(--header-background-color), 0.5) 100%);
     backdrop-filter: var(--header-backdrop-filter);
     box-shadow: var(--header-box-shadow);
     overflow: hidden;
@@ -55,11 +53,17 @@
             width: 12.5rem;
             height: 10.125rem;
         }
-        transition: 0.6s ease;
+        transition: 0.4s ease;
         & > * {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        &:hover {
+            @include scaleObjectXl;
+            @media (min-width: 1200px) {
+                @include scaleObjectXs;
+            }
         }
     }
     &-navigation {
@@ -78,10 +82,7 @@
                     padding: var(--nav-item-padding-y) var(--nav-item-padding-x);
                 }
                 &:hover {
-                    --nav-item-background-color: rgba(
-                        var(--header-accent-color),
-                        0.0625
-                    );
+                    --nav-item-background-color: rgba(var(--header-accent-color), 0.0625);
                     background-color: var(--nav-item-background-color);
                     & .nav-link {
                         opacity: 1;
@@ -128,8 +129,7 @@
     &:is(.header-colorized) {
         --header-background-color: var(--white-rgb);
         --header-accent-color: var(--black-rgb);
-        --header-box-shadow: 0 0 0 transparent, 0 0 0 transparent,
-            0 0 0 transparent,
+        --header-box-shadow: 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent,
             0 0.0625rem 0 rgba(var(--header-accent-color), 0.2);
         background: rgba(var(--header-background-color), 1);
         @media (min-width: 1200px) {

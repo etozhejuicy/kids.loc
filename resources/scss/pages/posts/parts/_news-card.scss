@@ -1,3 +1,5 @@
+@import "../../../utilities/mixins.scss";
+
 :root {
     --news-card-background: var(--white);
     --news-card-cover-background: var(--grey-200);
@@ -23,9 +25,12 @@
     background: var(--news-card-background);
     box-shadow: unset;
     overflow: hidden;
-    transition: box-shadow 0.4s ease-in-out;
+    transition:
+        box-shadow 0.4s ease-in-out,
+        transform 0.4s ease;
     &:hover {
         box-shadow: var(--news-card-box-shadow);
+        @include scaleObjectXs;
     }
     &-inner {
         display: flex;

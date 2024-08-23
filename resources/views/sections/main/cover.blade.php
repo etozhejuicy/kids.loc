@@ -20,6 +20,8 @@
                         <div class="section-cover-subtitle">
                             Цифры проекта
                         </div>
+                        <!-- Якорный элемент -->
+                        <a href="{{ Route('index') }}#numbers" class="stretched-link"></a>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,5 @@
+@import "../utilities/mixins.scss";
+
 :root {
     --city-card-aspect-ratio: 10 / 14;
     --city-card-content-gap: 0rem;
@@ -15,6 +17,7 @@
     height: 100%;
     aspect-ratio: var(--city-card-aspect-ratio);
     border-radius: var(--city-card-border-radius);
+    transition: 0.4s ease;
     overflow: hidden;
     &::before {
         content: "";
@@ -28,6 +31,7 @@
         transition: box-shadow 0.8s ease;
     }
     &:hover {
+        @include scaleObjectMd;
         &::before {
             --city-card-box-shadow-color: var(--dark-blue);
             --city-card-box-shadow: inset 0 -10.5rem 3.375rem -3.375rem var(--city-card-box-shadow-color);

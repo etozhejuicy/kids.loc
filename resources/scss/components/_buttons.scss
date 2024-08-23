@@ -1,3 +1,5 @@
+@import "../utilities/mixins.scss";
+
 .btn {
     --bs-btn-padding-x: 2.094rem;
     --bs-btn-padding-y: 1.219rem;
@@ -46,7 +48,8 @@
         color 0.15s ease-in-out,
         background-color 0.15s ease-in-out,
         border-color 0.15s ease-in-out,
-        box-shadow 0.15s ease-in-out;
+        box-shadow 0.15s ease-in-out,
+        transform 0.4s ease;
     @media (min-width: 1200px) {
         --bs-btn-font-size: 1.5rem;
     }
@@ -170,9 +173,6 @@
                     margin-right: var(--bs-btn-gap);
                     margin-left: var(--bs-btn-gap);
                 }
-            }
-            &:is(.btn-social) {
-                padding: 0;
             }
             & > svg,
             & > img {
@@ -410,6 +410,14 @@
                     }
                 }
             }
+        }
+    }
+    &-social {
+        &:is(.btn-tg) {
+            @include btnTelegram;
+        }
+        &:is(.btn-vk) {
+            @include btnVk;
         }
     }
 }
