@@ -82,13 +82,13 @@
                             <div class="author-card-image">
                                 <!-- Иконка действия -->
                                 <div class="author-card-icon">
-                                    <button type="bu
-                                    <!-- Изображение писателяtton" class="btn btn-icon btn-white btn-sm rounded-circle"> -->
+                                    <button type="button" class="btn btn-icon btn-white btn-sm rounded-circle">
                                         <svg fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden=" true" focusable="false">
                                             <use xlink:href="/sprite.svg#search"></use>
                                         </svg>
                                     </button>
                                 </div>
+                                <!-- Изображение писателя -->
                                 <img data-src="/assets/images/pages/posts/show/sections/authors/example.png" class="lazyload" />
                                 <!-- Подпись (лейбл) писателя -->
                                 <div class="author-card-label">

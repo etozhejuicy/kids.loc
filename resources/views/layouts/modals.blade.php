@@ -207,7 +207,7 @@
 <!-- модалка забыли пароль -->
 
 <!-- В случае успеха чего-либо -->
-<div class="modal" data-modal-id="success">
+<div class="modal modal-narrow" data-modal-id="success">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

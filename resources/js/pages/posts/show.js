@@ -61,6 +61,22 @@ class Post {
                 swiperPhotos.update();
             }, 500);
         }
+
+        if ($(".swiper-media").length) {
+            var swiperMedia = new Swiper(".swiper-media", {
+                slidesPerView: "auto",
+                spaceBetween: -1,
+                navigation: {
+                    nextEl: ".media-btn-next",
+                    prevEl: ".media-btn-prev",
+                },
+                allowTouchMove: true,
+                grabCursor: true,
+            });
+            setTimeout(function () {
+                swiperMedia.update();
+            }, 500);
+        }
     }
 }
 

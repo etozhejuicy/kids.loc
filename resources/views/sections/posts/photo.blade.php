@@ -18,7 +18,7 @@
                             <!-- Слайд -->
                             <div class="swiper-slide">
                                 <!-- Карточка -->
-                                <div class="photo-card">
+                                <div class="photo-card" data-modal-open="photoModal">
                                     <div class="photo-card-inner">
                                         <!-- Зона изображения карточки -->
                                         <div class="photo-card-image">
@@ -32,7 +32,7 @@
                             <!-- Слайд -->
                             <div class="swiper-slide">
                                 <!-- Карточка -->
-                                <div class="photo-card">
+                                <div class="photo-card" data-modal-open="photoModal">
                                     <div class="photo-card-inner">
                                         <!-- Зона изображения карточки -->
                                         <div class="photo-card-image">
@@ -46,7 +46,7 @@
                             <!-- Слайд -->
                             <div class="swiper-slide">
                                 <!-- Карточка -->
-                                <div class="photo-card">
+                                <div class="photo-card" data-modal-open="photoModal">
                                     <div class="photo-card-inner">
                                         <!-- Зона изображения карточки -->
                                         <div class="photo-card-image">
@@ -60,7 +60,7 @@
                             <!-- Слайд -->
                             <div class="swiper-slide">
                                 <!-- Карточка -->
-                                <div class="photo-card">
+                                <div class="photo-card" data-modal-open="photoModal">
                                     <div class="photo-card-inner">
                                         <!-- Зона изображения карточки -->
                                         <div class="photo-card-image">
@@ -74,7 +74,7 @@
                             <!-- Слайд -->
                             <div class="swiper-slide">
                                 <!-- Карточка -->
-                                <div class="photo-card">
+                                <div class="photo-card" data-modal-open="photoModal">
                                     <div class="photo-card-inner">
                                         <!-- Зона изображения карточки -->
                                         <div class="photo-card-image">
