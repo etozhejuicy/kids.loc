@@ -1,6 +1,6 @@
 @import "../parts/cover-image";
 @import "../parts/indicators";
-@import "../parts/post-label";
+@import "../parts/post-label-new";
 
 :root {
     --section-cover-icon-size: 6.25rem;
@@ -25,25 +25,30 @@
         background: var(--yellow);
         transform: translateY(-100%);
     }
-
+    &-icons {
+        position: absolute;
+        top: 1.875rem;
+        left: 0;
+        z-index: 15;
+        width: 100%;
+        pointer-events: none;
+        @media (min-width: 768px) {
+            top: 2.5rem;
+        }
+        & > .container {
+            position: relative;
+            z-index: 1;
+        }
+    }
     & .section-cover-icon {
         display: none;
         @media (min-width: 1200px) {
-            position: absolute;
             z-index: 1;
             display: block;
             width: var(--section-cover-icon-size);
             height: var(--section-cover-icon-size);
             pointer-events: none;
             overflow: hidden;
-            &.circles {
-                top: 1.25rem;
-                left: 1.25rem;
-            }
-            &.sun {
-                bottom: 1.25rem;
-                right: 1.25rem;
-            }
             & > * {
                 width: 100%;
                 height: 100%;
@@ -83,8 +88,9 @@
     &-label {
         position: absolute;
         bottom: 1.875rem;
-        left: var(--section-cover-label-left);
+        left: 0;
         z-index: 15;
+        width: 100%;
         pointer-events: none;
         @media (min-width: 768px) {
             bottom: 2.5rem;

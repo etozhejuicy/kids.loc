@@ -25,3 +25,7 @@ Route::get('/posts', function () {
 Route::get('/post/show', function () {
     return view('posts.show');
 })->name('posts.show');
+
+Route::get('/post/show-new', function () {
+    return view('posts.show-new');
+})->name('posts.show-new');
