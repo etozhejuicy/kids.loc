@@ -22,9 +22,10 @@
                 </div>
                 <!-- Ссылка на новость -->
                 <div class="news-card-link">
-                    <a href="{{ Route('posts.show') }}" target="_blank">Читать</a>
+                    Читать
                 </div>
             </div>
         </div>
+        <a href="{{ Route('posts.show') }}" target="_blank" class="stretched-link"></a>
     </div>
 </div>

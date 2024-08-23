@@ -34,7 +34,8 @@
             </div>
             <!-- Изображение секции -->
             <div class="section-read-picture">
-                <img data-src="/assets/images/pages/main/sections/read/example.png" class="lazyload wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.05s" />
+                <img data-src="/assets/images/pages/posts/show/sections/cover/cover.png" class="lazyload wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.05s" />
+                <a href="{{ Route('posts.show') }}" class="stretched-link"></a>
             </div>
         </div>
     </div>

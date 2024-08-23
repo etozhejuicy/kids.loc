@@ -4,3 +4,7 @@
 @import "./sections/program";
 @import "./sections/video";
 @import "./sections/photos";
+
+.header {
+    transform: unset !important;
+}

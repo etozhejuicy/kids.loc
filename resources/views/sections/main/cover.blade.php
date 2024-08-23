@@ -27,7 +27,7 @@
             </div>
         </div>
         <!-- Лейбл "При поддержке" -->
-        <div class="section-cover-label">
+        <div class="section-cover-label" style="display:none !important;" elem-hide>
             <div class="cover-label">
                 <div class="cover-label-inner">
                     <!-- Заголовок лейбла -->

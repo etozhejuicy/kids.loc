@@ -16,7 +16,7 @@
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                 <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
-                                    <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
+                                    <img data-src="/assets/images/pages/posts/show/sections/cover/cover.png" class="lazyload" />
                                 </div>
                                 <!-- Область изображения -->
                                 <div class="city-card-content">
@@ -38,7 +38,7 @@
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                 <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
-                                    <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
+                                    <img data-src="/assets/images/pages/main/sections/cities/example-2.png" class="lazyload" />
                                 </div>
                                 <!-- Область изображения -->
                                 <div class="city-card-content">
@@ -60,7 +60,7 @@
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                 <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
-                                    <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
+                                    <img data-src="/assets/images/pages/main/sections/cities/example-3.png" class="lazyload" />
                                 </div>
                                 <!-- Область изображения -->
                                 <div class="city-card-content">
@@ -82,7 +82,7 @@
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                 <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
-                                    <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
+                                    <img data-src="/assets/images/pages/main/sections/cities/example-4.png" class="lazyload" />
                                 </div>
                                 <!-- Область изображения -->
                                 <div class="city-card-content">
@@ -104,7 +104,7 @@
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                 <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
-                                    <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
+                                    <img data-src="/assets/images/pages/main/sections/cities/example-5.png" class="lazyload" />
                                 </div>
                                 <!-- Область изображения -->
                                 <div class="city-card-content">
@@ -126,7 +126,7 @@
                             <div class="city-card wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0s">
                                 <!-- Область изображения -->
                                 <div class="city-card-cover lazyload" data-expand="-10">
-                                    <img data-src="/assets/images/pages/main/sections/cities/example.png" class="lazyload" />
+                                    <img data-src="/assets/images/pages/main/sections/cities/example-6.png" class="lazyload" />
                                 </div>
                                 <!-- Область изображения -->
                                 <div class="city-card-content">

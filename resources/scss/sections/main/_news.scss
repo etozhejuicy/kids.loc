@@ -111,9 +111,11 @@
     }
     &-action {
         & > .btn {
-            @include scaleObjectMd;
             @media (min-width: 768px) {
                 min-width: 33.12rem;
+            }
+            &:hover {
+                @include scaleObjectMd;
             }
         }
     }
